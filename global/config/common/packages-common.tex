@@ -1,0 +1,43 @@
+% \input{\pGlobalConfigCommon/"packages-common.tex"}
+\typeout{  ==  ==  ==  ==  ==  \pGlobalConfigCommon/"packages-common.tex"}
+
+% Global setup for packages used in most reports
+% The amssymb package provides additional mathematical symbols
+% such as \mathbb for blackboard bold (e.g., \mathbb{R} for ℝ),
+% and specialized symbols like \nleq, \rightsquigarrow, and \boxdot.
+% Often used alongside amsmath for a complete mathematical toolkit.
+\usepackage{amssymb}
+
+
+% ========== Mathematics and Formatting ==========
+\usepackage{amsmath}    % Advanced math typesetting
+\usepackage{amssymb}    % Extended math symbols
+\usepackage{amsthm}     % Theorem-like environments
+\usepackage{mathtools}  % Extensions to amsmath
+
+% ========== Tables ==========
+\usepackage{colortbl}   % Add color to table rows and columns
+\usepackage{multirow}   % Merge rows in tables
+\usepackage{multicol}   % Columns in documents
+\usepackage{booktabs}   % Professional table formatting
+
+% ========== Graphics and Overlays ==========
+\usepackage{graphicx}   % Core package for image handling
+\usepackage{overpic}    % Overlay graphics with LaTeX annotations
+\usepackage{tikz}       % Create diagrams and illustrations
+    \usetikzlibrary{arrows.meta} % Enhanced arrow styles
+    \usetikzlibrary{arrows}      % Basic arrow styles
+    \usetikzlibrary{shapes.geometric} % Geometric shapes
+    \usetikzlibrary{positioning} % Relative positioning of nodes
+    \usetikzlibrary{decorations.pathmorphing} % Path decorations (e.g., snake lines)
+
+% ========== Miscellaneous ==========
+\usepackage{xcolor}     % Extended color definitions
+\usepackage{pdfpages}   % Include pages from external PDFs (optional, documents only)
+
+% ========== Hyperlinks ==========
+\usepackage{hyperref}   % Hyperlinks and cross-references
+\PassOptionsToPackage{hidelinks}{hyperref} % Option to hide link borders
+% Note: Load hyperref last in the document to avoid conflicts.
+
+\endinput  %  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -

@@ -1,0 +1,40 @@
+% \input{\pGlobalLibs/"lib-norms-modern.tex"}
+\typeout{  **  **  **  **  **  \pGlobalLibs/"lib-norms-modern.tex"}
+
+% Norms for mathematical expressions
+% Coauthored by Achates
+% Wed Dec 25 17:11:39 MST 2024
+
+% General norm
+\DeclareRobustCommand{\norm}[1]{\left\lVert #1 \right\rVert} % Usage: \norm{x} for ||x||
+
+% Specific norms
+\DeclareRobustCommand{\normOne}[1]{\norm{#1}_1} 			% Usage: \normOne{x} for ||x||_1
+\DeclareRobustCommand{\normTwo}[1]{\norm{#1}_2} 			% Usage: \normTwo{x} for ||x||_2
+\DeclareRobustCommand{\normInf}[1]{\norm{#1}_\infty} 		% Usage: \normInf{x} for ||x||_\infty
+\DeclareRobustCommand{\normP}[1]{\norm{#1}_p} 				% Usage: \normP{x} for ||x||_p
+\DeclareRobustCommand{\normF}[1]{\norm{#1}_F} 				% Usage: \normF{x} for Frobenius norm ||x||_F
+
+% Squared norms
+\DeclareRobustCommand{\normSquared}[1]{\norm{#1}^2} 		% Usage: \normSquared{x} for ||x||^2
+\DeclareRobustCommand{\normOneSquared}[1]{\normOne{#1}^2} 	% Usage: \normOneSquared{x} for ||x||_1^2
+\DeclareRobustCommand{\normTwoSquared}[1]{\normTwo{#1}^2} 	% Usage: \normTwoSquared{x} for ||x||_2^2
+\DeclareRobustCommand{\normInfSquared}[1]{\normInf{#1}^2} 	% Usage: \normInfSquared{x} for ||x||_\infty^2
+\DeclareRobustCommand{\normPSquared}[1]{\normP{#1}^2} 		% Usage: \normPSquared{x} for ||x||_p^2
+\DeclareRobustCommand{\normFSquared}[1]{\normF{#1}^2} 		% Usage: \normFSquared{x} for Frobenius norm squared ||x||_F^2
+
+% Notes on norm usage:
+% - \norm{x}: General norm of x, rendered as ||x||.
+% - \normF{x}: Frobenius norm, suitable for matrices, rendered as ||x||_F.
+% - Squared norms (e.g., \normSquared{x}): Commonly used in optimization and error metrics.
+% - Specific norms include:
+%   * \normOne{x}: 1-norm or Manhattan norm.
+%   * \normTwo{x}: 2-norm or Euclidean norm.
+%   * \normInf{x}: Infinity norm.
+%   * \normP{x}: p-norm for general p.
+% These commands are useful in linear algebra, numerical analysis, and optimization problems.
+
+\endinput % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+% Scratch space for experimentation or temporary additions
+% Example: Add alternative norm definitions or specialized notations

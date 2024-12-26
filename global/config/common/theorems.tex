@@ -1,0 +1,53 @@
+% \input{\pGlobalConfigCommon/"theorems.tex"}
+\typeout{  ==  ==  ==  ==  ==  \pGlobalConfigCommon/"theorems.tex"}
+
+
+% File: theorems.tex
+% Purpose: Unified theorem configuration for documents and presentations.
+% Author: Achates, with guidance from Daniel Topa
+% Sun Dec 22 21:33:42 MST 2024
+
+% The amsthm package provides tools for defining and formatting theorem-like 
+% environments, such as theorems, lemmas, corollaries, and proofs. It ensures 
+% consistent numbering and styling of logical statements in mathematical documents.
+\usepackage{amsthm}
+
+% Define global theorem styles
+% In Section 2, the numbering restarts, e.g., 2.1, 2.2.
+% Environments like lemma and corollary share numbering with theorem because of [theorem].
+\theoremstyle{plain} % Default style
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+% Definition style
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}[definition]{Example}
+
+% Remark style
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+
+% Beamer-specific customization
+\ifdefined\beamer@rendering
+    % Customizations for splitting theorems in Beamer
+    \newcommand*{\theorembreak}{%
+        \usebeamertemplate{theorem end}%
+        \framebreak%
+        \usebeamertemplate{theorem begin}%
+    }
+\else
+    % No-op for non-Beamer documents
+    \newcommand*{\theorembreak}{}
+\fi
+
+% Usage:
+% In Beamer, use \theorembreak to split a theorem across frames:
+% \begin{theorem}
+% This theorem spans multiple frames.
+% \theorembreak
+% Here is the continuation of the theorem.
+% \end{theorem}
+
+\endinput  %  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -

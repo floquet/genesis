@@ -1,0 +1,36 @@
+% \input{\pGlobalLibs/"lib-delimiters-modern.tex"}
+\typeout{  **  **  **  **  **  \pGlobalLibs/"lib-delimiters-modern.tex"}
+
+% Delimiters for mathematical expressions
+% Coauthored by Achates
+% Wed Dec 25 17:11:39 MST 2024
+
+% Absolute value
+\DeclareRobustCommand{\abs}[1]{\lvert #1 \rvert} % Usage: \abs{x} for |x|
+
+% Parentheses
+\DeclareRobustCommand{\paren}[1]{\left( #1 \right)} % Usage: \paren{x+y} for (x+y)
+
+% Inner products
+\DeclareRobustCommand{\inner}[2]{\langle #1, #2 \rangle} % Usage: \inner{x}{y} for <x, y>
+\DeclareRobustCommand{\innerSelf}[1]{\inner{#1}{#1}} % Usage: \innerSelf{x} for <x, x>
+
+% Brackets
+\DeclareRobustCommand{\brackets}[1]{\left[ #1 \right]} % Usage: \brackets{x+y} for [x+y]
+
+% Curly braces
+\DeclareRobustCommand{\curly}[1]{\left\{ #1 \right\}} % Usage: \curly{x, y, z} for {x, y, z}
+
+% Bracketed inner product
+\DeclareRobustCommand{\barInner}[2]{\left[ #1 \mid #2 \right]} % Usage: \barInner{x}{y} for [x | y]
+
+% Notes on inner product usage:
+% - \inner{x}{y}: Represents the general inner product of x and y, rendered as <x, y>.
+% - \innerSelf{x}: Represents the self inner product or norm squared of x, rendered as <x, x>.
+% - \barInner{x}{y}: A variation of the inner product enclosed in square brackets, rendered as [x | y].
+% These commands are flexible for use in mathematical documents involving linear algebra, quantum mechanics, or other fields requiring inner products and norms.
+
+\endinput % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+% Scratch space for experimentation or temporary additions
+% Example: Test alternative delimiters or specialized commands

@@ -1,0 +1,61 @@
+% \input{\pGlobalConfigDocs/"packages-docs.tex"}
+\typeout{  --  --  --  --  --  \pGlobalConfigDocs/"packages-docs.tex"}
+
+% Global setup for packages used in most reports
+% The amssymb package provides additional mathematical symbols
+% such as \mathbb for blackboard bold (e.g., \mathbb{R} for ℝ),
+% and specialized symbols like \nleq, \rightsquigarrow, and \boxdot.
+% Often used alongside amsmath for a complete mathematical toolkit.
+\usepackage{amssymb}
+
+% Geometry package for page layout
+% `showframe` option helps visualize margins (useful during debugging)
+%\usepackage[showframe]{geometry}
+\usepackage[]{geometry}
+\geometry{letterpaper} % Standard letter paper dimensions
+
+% Authblk package for author affiliations
+\usepackage[ affil-it ]{authblk}
+
+% Include external PDFs (e.g., appendices or supplemental material)
+\usepackage{pdfpages}
+
+% Hyperref package for clickable links in the document
+\PassOptionsToPackage{hidelinks}{hyperref} % Set global options
+\usepackage{hyperref} % Load hyperref once
+%\usepackage[hidelinks]{hyperref} % Hide link borders for clean PDF appearance
+
+% Fancy Verbatim for typesetting code or preformatted text
+\usepackage{fancyvrb}
+
+% Improve font support
+\usepackage[ T1 ]{fontenc}
+
+% Graphicx for including images
+\usepackage{graphicx}
+
+% Overpic for overlaying text on images
+\usepackage{overpic}
+
+% Xcolor for custom colors (with additional options for named colors)
+%\usepackage[dvipsnames]{xcolor} % Example: "red", "blue", "ForestGreen"
+
+% Colortbl for colored table cells
+\usepackage{colortbl}
+
+% Textpos for absolute text positioning (useful for annotations or overlays)
+\usepackage[ overlay,absolute ]{textpos}
+
+% Parfill option for better paragraph spacing
+\usepackage[ parfill ]{parskip}
+
+% TikZ for diagrams and graphics
+\usepackage{tikz}
+	% Load commonly used TikZ libraries
+	\usetikzlibrary{arrows.meta} % Enhanced arrow styles
+	\usetikzlibrary{arrows}      % Basic arrow styles
+
+% Avoid redundancy: Hyperref and Xcolor should be loaded once with the desired options
+% Ensure `xcolor` options are passed explicitly for consistency
+
+\endinput  % Terminate the file to ignore any unintended trailing content

@@ -1,0 +1,38 @@
+<fulfillmentToken fulfillmentType="loan" auth="user" xmlns="http://ns.adobe.com/adept">
+  <distributor>urn:uuid:501e16ca-f45c-4a0c-9a9f-8a270a9f2ed6</distributor>
+  <operatorURL>http://rps2images.ebscohost.com/fulfillment</operatorURL>
+  <transaction>s4858255:28236131:500565:1735167549441:1821821533</transaction>
+  <purchase>2024-12-25T22:59:09+00:00</purchase>
+  <expiration>2024-12-26T04:59:09+00:00</expiration>
+  <resourceItemInfo>
+    <resource>urn:uuid:d445bbd7-e4ea-46c3-b6a7-ec86638f960e</resource>
+    <resourceItem>1</resourceItem>
+    <metadata>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">New Methods of Celestial Mechanics</dc:title>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Vrbík, Jan.</dc:creator>
+      <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Bentham Science Publishers Ltd.</dc:publisher>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/pdf</dc:format>
+      <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+    </metadata>
+    <licenseToken>
+      <resource>urn:uuid:d445bbd7-e4ea-46c3-b6a7-ec86638f960e</resource>
+      <permissions>
+        <display>
+          <until>2025-01-01T22:58:09+00:00</until>
+        </display>
+        <excerpt>
+          <until>2025-01-01T22:58:09+00:00</until>
+          <count initial="100"/>
+        </excerpt>
+        <print>
+          <until>2025-01-01T22:58:09+00:00</until>
+          <count initial="100"/>
+        </print>
+        <play>
+          <until>2025-01-01T22:58:09+00:00</until>
+        </play>
+      </permissions>
+    </licenseToken>
+  </resourceItemInfo>
+  <hmac>Xqqj3aQk5aXJlFHHY71TgTl0DjE=</hmac>
+</fulfillmentToken>
