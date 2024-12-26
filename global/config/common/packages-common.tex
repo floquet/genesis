@@ -6,14 +6,14 @@
 % such as \mathbb for blackboard bold (e.g., \mathbb{R} for ℝ),
 % and specialized symbols like \nleq, \rightsquigarrow, and \boxdot.
 % Often used alongside amsmath for a complete mathematical toolkit.
-\usepackage{amssymb}
-
 
 % ========== Mathematics and Formatting ==========
 \usepackage{amsmath}    % Advanced math typesetting
 \usepackage{amssymb}    % Extended math symbols
 \usepackage{amsthm}     % Theorem-like environments
 \usepackage{mathtools}  % Extensions to amsmath
+\usepackage[T1]{fontenc} % Use T1 font encoding for better hyphenation, accented characters, and PDF searchability
+\usepackage{lmodern}    % Optional: Load modern Latin fonts for improved appearance and scalability
 
 % ========== Tables ==========
 \usepackage{colortbl}   % Add color to table rows and columns
@@ -26,7 +26,6 @@
 \usepackage{overpic}    % Overlay graphics with LaTeX annotations
 \usepackage{tikz}       % Create diagrams and illustrations
     \usetikzlibrary{arrows.meta} % Enhanced arrow styles
-    \usetikzlibrary{arrows}      % Basic arrow styles
     \usetikzlibrary{shapes.geometric} % Geometric shapes
     \usetikzlibrary{positioning} % Relative positioning of nodes
     \usetikzlibrary{decorations.pathmorphing} % Path decorations (e.g., snake lines)
@@ -41,3 +40,6 @@
 % Note: Load hyperref last in the document to avoid conflicts.
 
 \endinput  %  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+Legacy:
+    \usetikzlibrary{arrows}      % Basic arrow styles

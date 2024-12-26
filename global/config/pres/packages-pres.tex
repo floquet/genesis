@@ -4,31 +4,8 @@
 % Coauthored by Achates
 % Wed Dec 25 17:11:39 MST 2024
 
-% Overlay graphics (annotations on images, ensure graphicx is loaded first)
-\usepackage{graphicx} % Core package for image handling
-\usepackage{overpic} % Enables annotations on images
-
-% Table styling (row coloring, spanning rows/columns)
-\usepackage{colortbl} % Adds row and column coloring in tables
-\usepackage{multirow} % Enables table cells spanning multiple rows
-
 % Text positioning and overlays
 \usepackage[ overlay, absolute ]{textpos} % Absolute text block positioning
-
-% TikZ for diagrams and graphics
-\usepackage{tikz} % High-quality vector graphics
-    \usetikzlibrary{arrows.meta} % Modern arrow styles
-    \usetikzlibrary{shapes.geometric} % Geometric shapes for diagrams
-    \usetikzlibrary{positioning} % Simplifies relative positioning
-    \usetikzlibrary{decorations.pathmorphing} % Custom path decorations
-
-% Extended color support (must be loaded before color-dependent packages)
-\PassOptionsToPackage{dvipsnames}{xcolor} % Extended color names
-
-% Hyperlinks and references (must be loaded last to avoid conflicts)
-% Pass the "hidelinks" option for clean PDFs with invisible links.
-\PassOptionsToPackage{hidelinks}{hyperref}
-\usepackage{hyperref}
 
 \endinput % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 
