@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calc} % For coordinate calculations
+
+\begin{document}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[line cap=round, line join=round]
+        % Coordinate system
+        \draw[thin, ->] (0, 0) -- (6, 0) node[below] {$x$};
+        \draw[thin, ->] (0, 0) -- (0, 4) node[left] {$y$};
+        \draw[thin, ->] (0, 0) -- (-2, -2) node[below left] {$z$};
+        
+        % Vectors
+        \draw[thick, ->] (0, 0) -- (3, 2) node[midway, above] {$\vec{v}_1$};
+        \draw[thick, ->] (0, 0) -- (4, -1) node[midway, below] {$\vec{v}_2$};
+        \draw[gray, thick, ->] (0, 0) -- (2, 0.5) node[midway, above] {$\vec{v}_{\text{cm}}$};
+
+        % Label crossing angle
+        \coordinate (origin) at (0, 0);
+        \coordinate (v1) at (3, 2);
+        \coordinate (v2) at (4, -1);
+        
+        \pic [draw=black, angle radius=1cm, angle eccentricity=1.2] {angle = v2--origin--v1};
+        \node at (1.2, 0.6) {$\theta$};
+
+        % Dashed lines for projections
+        \draw[thin, dashed] (v1) -- (3, 0) node[pos=0.8, below right] {};
+        \draw[thin, dashed] (v2) -- (4, 0) node[pos=0.8, above left] {};
+
+        % Legend (optional)
+        \node[black, below] at (6, 3.5) {};
+    \end{tikzpicture}
+    \caption{Vector representation of satellite collision with crossing angle $\theta$.}
+\end{figure}
+
+\end{document}

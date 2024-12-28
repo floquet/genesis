@@ -1,0 +1,152 @@
+% typeset: Pdftex
+% Afterwards compile with pdflatex > bibtex > pdflatex > pdflatex.
+% CLI: pdflatex main-delete.tex
+% Beamer likes biber
+\documentclass[10pt, oneside]{article}
+
+% Created by ./../scripts/new-doc.sh at 2024-12-27 14:40:59
+
+% Fetch home directory: make this file independent of file system
+\usepackage{catchfile}
+\CatchFileDef{\HomePath}{|kpsewhich -var-value=HOME}{}
+% Define base paths
+% relies on symlink  at /Users/dantopa/, e.g.
+% 	GitHub -> /Users/dantopa//repos-xiuhcoatl/github
+\makeatletter
+\edef\HomePath{\expandafter\zap@space\HomePath \@empty}
+\makeatother
+\newcommand{\pGithub}                                           {\HomePath/GitHub/}
+    \newcommand{\pTrunk}	                                       {\pGithub/genesis/}
+        \newcommand{\pPres}                                     {\pTrunk/docs/}
+            \newcommand{\pWorkspace}                        {\pPres/delete}
+        \newcommand{\pGlobal}                                   {\pTrunk/global}
+            \newcommand{\pGlobalConfig}                     {\pGlobal/config/}
+                \newcommand{\pGlobalConfigCommon}   {\pGlobalConfig/common/}
+
+% Load Global Setup Files
+\input{\pGlobalConfigCommon/"config-common.tex"}
+\input{\pGlobalConfigDocs/"config-docs.tex"}
+
+% ===========================================================
+% Global and Local Resource Setup
+% The following lines load various global and local resource
+% configurations, paths, and package lists required for the 
+% document. These files are part of the shared library located
+% ===========================================================
+
+% config-common.tex
+
+%   listings-codes.tex
+%   num-components.tex
+%   num-list.tex
+%   paths-global.tex
+%   paths-local.tex}
+%   paths-bitbucket
+%   theorems.tex
+
+% Choose hyperlink configuration:
+\input{\pGlobalConfigCommon/"href-hidden.tex"}   % For hidden links (clean, professional)
+% \input{\pGlobalConfigCommon/"href-visible.tex"} % For visible links (debugging, drafts)
+
+%\usepackage[printwatermark]{xwatermark}
+%	\newwatermark[ allpages, color=red!5, angle=45, scale=3, xpos=0, ypos=0 ]{DRAFT}
+
+%   --   --   --   --   --   --   --   --   --   -- Bibliography
+\input{\pGlobalConfigCommon/"bib-config-a.tex"}
+\addbibresource{\pBibs/delete.bib}
+%\addbibresource{\pBibs/alternative.bib}
+
+%   --   --   --   --   --   --   --   --   --   -- Title, Author
+\title{delete}
+\author{Daniel Topa\\\TopaHIIEmail}
+\affil{\missiontech}
+
+%   --   --   --   --   --   --   --   --   --   -- Structure
+\begin{document}
+\maketitle
+	%\input{\pSections/"sec-abstract.tex"}
+\tableofcontents
+
+	\input{\pSections/"sec-intro.tex"}
+	\input{\pSections/"sec-backup.tex"}
+
+\appendix
+
+% Appendices content
+% \input{\pSections app-appendix.tex}
+
+\nocite{*}
+\printbibliography[ heading = bibintoc ]
+ 
+\end{document}
+
+%\tiny
+%\scriptsize
+%\footnotesize
+%\small
+%\normalsize
+%\large
+%\Large
+%\LARGE
+%\huge
+%\Huge
+
+%\, thin space (normally 1/6 of a quad);
+%\> medium space (normally 2/9 of a quad);
+%\; thick space (normally 5/18 of a quad);
+
+%         ---         ---         ---         ---         ---   Equations
+\begin{equation}
+  
+\label{eq:}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+  & \
+\end{split} 
+\label{eq:}
+\end{equation}
+%
+\begin{equation*}
+  
+\end{equation*}
+%
+\begin{equation}
+\begin{array}{ccc}
+    %
+  & & \\
+    %
+  & & \\
+    %
+\end{array}
+\end{equation}
+%         ---         ---         ---         ---         ---   Tables
+\begin{table}[htp]
+\caption{default}
+\begin{center}
+\begin{tabular}{ccc}
+    %
+  & & \\
+    %
+  & & \\
+    %
+\end{tabular}
+\end{center}
+\label{tab:}
+\end{table}
+%         ---         ---         ---         ---         ---   Lists
+\begin{enumerate}
+  \item 
+  \item
+  \item
+\end{enumerate}
+%
+\begin{enumerate}
+  \item 
+  \begin{enumerate}
+    \item 
+  \end{enumerate}
+  \item
+  \item
+\end{enumerate}
