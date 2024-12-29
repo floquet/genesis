@@ -102,7 +102,6 @@ SUBDIRS=(
   "local/debug"
   "local/graphics"
   "local/refs"
-  "local/slides"
   "local/components/figs"
   "local/components/tabs"
   "local/components/thms"
@@ -136,17 +135,18 @@ cat << EOF > "$DOCUMENT_DIR/main/main-$DOCUMENT_NAME.tex"
 \makeatletter
 \edef\HomePath{\expandafter\zap@space\HomePath \@empty}
 \makeatother
-\newcommand{\pGithub}                                           {\HomePath/GitHub/}
-    \newcommand{\pTrunk}	                                       {\pGithub/genesis/}
-        \newcommand{\pPres}                                     {\pTrunk/docs/}
-            \newcommand{\pWorkspace}                        {\pPres/${DOCUMENT_NAME}}
-        \newcommand{\pGlobal}                                   {\pTrunk/global}
-            \newcommand{\pGlobalConfig}                     {\pGlobal/config/}
-                \newcommand{\pGlobalConfigCommon}   {\pGlobalConfig/common/}
+\newcommand{\pGithub} {\HomePath/GitHub/}
+    \newcommand{\pTrunk} {\pGithub/genesis/}
+        \newcommand{\pDocs} {\pTrunk/docs/}
+            \newcommand{\pWorkspace} {\pDocs/${DOCUMENT_NAME}}
+        \newcommand{\pGlobal} {\pTrunk/global}
+            \newcommand{\pGlobalConfig} {\pGlobal/config/}
+                \newcommand{\pGlobalConfigCommon} {\pGlobalConfig/common/}
 
 % Load Global Setup Files
 \input{\pGlobalConfigCommon/"config-common.tex"}
 \input{\pGlobalConfigDocs/"config-docs.tex"}
+\input{\pConfig/"config-local.tex"}
 
 % ===========================================================
 % Global and Local Resource Setup
@@ -160,6 +160,7 @@ cat << EOF > "$DOCUMENT_DIR/main/main-$DOCUMENT_NAME.tex"
 %   listings-codes.tex
 %   num-components.tex
 %   num-list.tex
+%   packages-common.tex
 %   paths-global.tex
 %   paths-local.tex}
 %   paths-bitbucket
@@ -278,7 +279,7 @@ cat << 'EOF' > "$DOCUMENT_DIR/sections/sec-abstract.tex"
 % \input{\pSections "sec-abstract.tex"}
 
 \begin{abstract}
-% This document presents an analysis of ... [Insert concise abstract content here].
+% This document Docsents an analysis of ... [Insert concise abstract content here].
 % The purpose of this work was to ... [Purpose].
 % The methodology involved ... [Methods].
 % Key results include ... [Results].

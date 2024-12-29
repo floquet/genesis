@@ -17,15 +17,17 @@
 \makeatother
 \newcommand{\pGithub}                                           {\HomePath/GitHub/}
     \newcommand{\pTrunk}	                                       {\pGithub/genesis/}
-        \newcommand{\pPres}                                     {\pTrunk/docs/}
-            \newcommand{\pWorkspace}                        {\pPres/lyapunov}
+        \newcommand{\pDocs}                                     {\pTrunk/docs/}
+            \newcommand{\pWorkspace}                        {\pDocs/lyapunov}
         \newcommand{\pGlobal}                                   {\pTrunk/global}
             \newcommand{\pGlobalConfig}                     {\pGlobal/config/}
                 \newcommand{\pGlobalConfigCommon}   {\pGlobalConfig/common/}
+                \newcommand{\pGlobalConfigDocs}   {\pGlobalConfig/docs/}
 
 % Load Global Setup Files
 \input{\pGlobalConfigCommon/"config-common.tex"}
-\input{\pLocalConfigDocs/"config-docs.tex"}
+\input{\pGlobalConfigDocs/"config-docs.tex"}
+\input{\pConfig/"config-local.tex"}
 
 % ===========================================================
 % Global and Local Resource Setup
@@ -39,6 +41,7 @@
 %   listings-codes.tex
 %   num-components.tex
 %   num-list.tex
+%   packages-common.tex
 %   paths-global.tex
 %   paths-local.tex}
 %   paths-bitbucket
@@ -64,7 +67,7 @@
 %   --   --   --   --   --   --   --   --   --   -- Structure
 \begin{document}
 \maketitle
-	%\input{\pSections/"sec-abstract.tex"}
+	\input{\pSections/"sec-abstract.tex"}
 \tableofcontents
 
 	\input{\pSections/"sec-intro.tex"}
