@@ -1,5 +1,16 @@
-% \input{\pGlobalConfigPres/config.tex}
-\typeout{  ++  ++  ++  ++  ++  \pLocalConfigPres/"config.tex"}
+% \input{\pGlobConfType/config-type.tex}
+\typeout{  ++  ++  ++  ++  ++  \pGlobConfType/"config-type.tex"}
+
+\input{\pGlobConfType/"aesthetics.tex"}
+\input{\pGlobConfType/"jumps.tex"}
+\input{\pGlobConfType/"packages-type.tex"}
+\input{\pGlobConfType/"theorems-type.tex"}
+
+% Customize the appearance of bibliography items in Beamer
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+
+\endinput  %  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
 
 \input{\pGlobalSetup/"paths-global.tex"}
 \input{\pGlobalSetup/"packages-global-beamer.tex"}
@@ -15,4 +26,3 @@
 % Customize the appearance of bibliography items in Beamer
 \setbeamertemplate{bibliography item}{\insertbiblabel}
 
-\endinput  %  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -

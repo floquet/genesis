@@ -185,38 +185,44 @@ y)
 y))) (/usr/local/texlive/2024/texmf-dist/tex/generic/catchfile/catchfile.sty
 (/usr/local/texlive/2024/texmf-dist/tex/generic/etexcmds/etexcmds.sty))
 (|kpsewhich -var-value=HOME)
-(/Users/dantopa//GitHub//genesis//global/config//common//config-common.tex
- == == == == == /Users/dantopa//GitHub//genesis//global/config//common//"config
--common.tex"
-(/Users/dantopa//GitHub//genesis//global/config//common//hyperlinks-global.tex
- == == == == == /Users/dantopa//GitHub//genesis//global/config//common//"hyperl
-inks-global.tex"
-) (/Users/dantopa//GitHub//genesis//global/config//common//listings-codes.tex
- == == == == == /Users/dantopa//GitHub//genesis//global/config//common//"listin
-gs-codes.tex"
+ ** ** ** ** ** Begin configuration sequence: Global, Pres, Local
+ ** ** ** ** ** pGlobConfCom = /Users/dantopa//GitHub//genesis//global//config/
+/common/
+ ** ** ** ** ** pGlobConfType = /Users/dantopa//GitHub//genesis//global//config
+//pres/
+(/Users/dantopa//GitHub//genesis//global//config//common//config-common-01.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"confi
+g-common-01.tex"
+
+(/Users/dantopa//GitHub//genesis//global//config//common//hyperlinks-global.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"hyper
+links-global.tex"
+) (/Users/dantopa//GitHub//genesis//global//config//common//listings-codes.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"listi
+ngs-codes.tex"
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg)))
-(/Users/dantopa//GitHub//genesis//global/config//common//num-components.tex
- == == == == == /Users/dantopa//GitHub//genesis//global/config//common//"number
-ing-global.tex"
-) (/Users/dantopa//GitHub//genesis//global/config//common//num-list.tex
- == == == == == /Users/dantopa//GitHub//genesis//global/config//common//"num-li
-st.tex"
+(/Users/dantopa//GitHub//genesis//global//config//common//num-components.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"numbe
+ring-global.tex"
+) (/Users/dantopa//GitHub//genesis//global//config//common//num-list.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"num-l
+ist.tex"
 (/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty))
-(/Users/dantopa//GitHub//genesis//global/config//common//paths-global.tex
- == == == == == /Users/dantopa//GitHub//genesis//global/config//common//"paths-
-global.tex"
-) (/Users/dantopa//GitHub//genesis//global/config//common//paths-local.tex
- == == == == == /Users/dantopa//GitHub//genesis//global/config//common//"paths-
-local.tex"
-) (/Users/dantopa//GitHub//genesis//global/config//common//paths-bitbucket.tex
- == == == == == /Users/dantopa//GitHub//genesis//global/config//common//"paths-
-bitbucket"
-) (/Users/dantopa//GitHub//genesis//global/config//common//packages-common.tex
- == == == == == /Users/dantopa//GitHub//genesis//global/config//common//"packag
-es-common.tex"
+(/Users/dantopa//GitHub//genesis//global//config//common//paths-global-01.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"paths
+-global-01.tex"
+) (/Users/dantopa//GitHub//genesis//global//config//common//paths-local-01.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"paths
+-local-01.tex"
+) (/Users/dantopa//GitHub//genesis//global//config//common//paths-bitbucket.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"paths
+-bitbucket"
+) (/Users/dantopa//GitHub//genesis//global//config//common//packages-common.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"packa
+ges-common.tex"
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/mathtools.sty
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/calc.sty)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/mhsetup.sty))
@@ -270,10 +276,39 @@ brarydecorations.pathmorphing.code.tex))
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/eso-pic/eso-pic.sty)
-(/usr/local/texlive/2024/texmf-dist/tex/latex/pdfpages/pppdftex.def)))
-(/Users/dantopa//GitHub//genesis//global/config//common//theorems.tex
- == == == == == /Users/dantopa//GitHub//genesis//global/config//common//"theore
-ms.tex"
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pdfpages/pppdftex.def))))
+(/Users/dantopa//GitHub//genesis//global//config//pres//config-type.tex
+ ++ ++ ++ ++ ++ /Users/dantopa//GitHub//genesis//global//config//pres//"config-
+type.tex"
+(/Users/dantopa//GitHub//genesis//global//config//pres//aesthetics.tex
+ ++ ++ ++ ++ ++ /Users/dantopa//GitHub//genesis//global//config//pres//"aesthet
+ics.tex"
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerthemeCopenhagen.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemesplit.sty)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.st
+y)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerfontthemestructurebo
+ld.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty))
+(/Users/dantopa//GitHub//genesis//global//config//pres//jumps.tex
+ ++ ++ ++ ++ ++ /Users/dantopa//GitHub//genesis//global//config//pres//"jumps.t
+ex"
+) (/Users/dantopa//GitHub//genesis//global//config//pres//packages-type.tex
+ ++ ++ ++ ++ ++ /Users/dantopa//GitHub//genesis//global//config//pres//"package
+s-pres.tex"
+(/usr/local/texlive/2024/texmf-dist/tex/latex/textpos/textpos.sty
+Grid set 16 x 16 = 22.7622pt x 17.07166pt
+TextBlockOrigin set to 0pt x 0pt
+)) (/Users/dantopa//GitHub//genesis//global//config//pres//theorems-type.tex
+ ++ ++ ++ ++ ++ /Users/dantopa//GitHub//genesis//global//config//pres//"theorem
+s-type.tex"
 
 ! LaTeX Error: Command \theorem already defined.
                Or name \end... illegal, see p.192 of the manual.
@@ -282,7 +317,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 \newtheorem{theorem}
+l.14 \newtheorem{theorem}
                          {Theorem}[section]
 ? 
 ! LaTeX Error: Missing \begin{document}.
@@ -291,7 +326,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 \newtheorem{theorem}{T
+l.14 \newtheorem{theorem}{T
                            heorem}[section]
 ? 
 ! LaTeX Error: Command \lemma already defined.
@@ -301,7 +336,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.19 \newtheorem{lemma}
+l.15 \newtheorem{lemma}
                        [theorem]{Lemma}
 ? 
 ! LaTeX Error: Command \corollary already defined.
@@ -311,76 +346,6 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 \newtheorem{corollary}
+l.16 \newtheorem{corollary}
                            [theorem]{Corollary}
 ? 
-! LaTeX Error: Command \definition already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.24 \newtheorem{definition}
-                            {Definition}[section]
-? 
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.24 \newtheorem{definition}{D
-                              efinition}[section]
-? 
-! LaTeX Error: Command \example already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.25 \newtheorem{example}
-                         [definition]{Example}
-? ))
-
-! LaTeX Error: File `/Users/dantopa//GitHub//genesis//global/config//docs//conf
-ig-pres.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/.tex File ignored)
-
-! LaTeX Error: File `/Users/dantopa//GitHub//genesis//pres///config//config-loc
-al.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/.tex File ignored)
-! Undefined control sequence.
-<argument> pGlobalSetup 
-                        href-hidden.tex
-l.54 \input{\pGlobalSetup href-hidden.tex}
-                                             % For hidden links (clean, prof...
-
-? ! Undefined control sequence.
-<argument> pGlobalSetup 
-                        href-hidden.tex
-l.54 \input{\pGlobalSetup href-hidden.tex}
-                                             % For hidden links (clean, prof...
-
-? ! Undefined control sequence.
-<inserted text> pGlobalSetup 
-                             href-hidden.tex
-l.54 \input{\pGlobalSetup href-hidden.tex}
-                                             % For hidden links (clean, prof...
-
-? 
-! LaTeX Error: File `href-hidden.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 

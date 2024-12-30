@@ -1,0 +1,35 @@
+% \input{\pGlobConfCom/"paths-local-01.tex"}
+\typeout{  ==  ==  ==  ==  ==  \pGlobConfCom/"paths-local-01.tex"}
+
+% ===========================================================
+% Unified Path Definitions Using \pWorkspace
+% ===========================================================
+
+% Workspace root, pWorkspace, defined in main/main-project.tex: 
+%\newcommand{\pWorkspace}              {../} % Root directory for the project
+
+% Main and sections paths
+\newcommand{\pConfig}              		{\pProj/config/}
+\newcommand{\pLocal}           			{\pProj/local/}
+\newcommand{\pMain}                		{\pProj/main/}
+\newcommand{\pSections}           		{\pProj/sections/}
+
+% Local paths based on \pWorkspace
+    \newcommand{\pLocalFigures}       	{\pLocal/figures-local/}
+	\newcommand{\pLocalComps}       	{\pLocal/components}
+		\newcommand{\pLocalCompsFigs}   {\pLocalComps/figs}
+		\newcommand{\pLocalCompsTabs}   {\pLocalComps/tabs}
+		\newcommand{\pLocalCompsThms}   {\pLocalComps/thms}
+
+    \newcommand{\pLocalCode}          {\pLocal/code/}
+    \newcommand{\pLocalData}          {\pLocal/data/}
+    \newcommand{\pLocalDebug}         {\pLocal/debug/}
+    \newcommand{\pLocalRefs}          {\pLocal/refs/}
+    \newcommand{\pLocalSlides}        {\pLocal/slides/}
+
+% Notes:
+% - \pWorkspace is the root path for the entire project.
+% - \pMain and \pSections now derive directly from \pWorkspace.
+% - All local subpaths (e.g., \pLocalCode, \pLocalFigures) are consistently based on \pLocal.
+	
+\endinput  %  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -

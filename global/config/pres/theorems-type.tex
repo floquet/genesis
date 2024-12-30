@@ -1,0 +1,39 @@
+% \input{\pGlobConfType/"theorems-type.tex"}
+\typeout{  ++  ++  ++  ++  ++  \pGlobConfType/"theorems-type.tex"}
+
+% File: pres/theorems-type.tex
+% Purpose: Beamer-specific theorem customizations.
+% Author: Achates, with guidance from Daniel Topa
+% Sun Dec 22 21:33:42 MST 2024
+
+% Define global theorem styles
+% Restart numbering in each section, e.g., 2.1, 2.2.
+% Environments like lemma and corollary share numbering with theorem.
+
+\theoremstyle{plain} % Default style
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}[definition]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+
+% Customize theorem behavior for Beamer presentations
+\ifdefined\beamer@rendering
+    % Enable frame breaks within theorems
+    \renewcommand*{\theorembreak}{%
+        \usebeamertemplate{theorem end}%
+        \framebreak%
+        \usebeamertemplate{theorem begin}%
+    }
+
+    % Optionally modify Beamer theorem templates
+    \setbeamertemplate{theorem begin}{\begin{block}{\inserttheoremheadfont\inserttheoremname\ \inserttheoremnumber}}
+    \setbeamertemplate{theorem end}{\end{block}}
+\fi
+
+\endinput

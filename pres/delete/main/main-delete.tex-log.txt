@@ -1,0 +1,8 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+! I can't find file `main-main-delete.tex.tex'.
+<*> main-main-delete.tex.tex
+                            
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 

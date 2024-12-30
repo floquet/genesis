@@ -15,18 +15,22 @@
 \makeatletter
 \edef\HomePath{\expandafter\zap@space\HomePath \@empty}
 \makeatother
-\newcommand{\pGithub}                                           {\HomePath/GitHub/}
-    \newcommand{\pTrunk}	                                       {\pGithub/genesis/}
-        \newcommand{\pDocs}                                     {\pTrunk/docs/}
-            \newcommand{\pWorkspace}                        {\pDocs/lyapunov}
-        \newcommand{\pGlobal}                                   {\pTrunk/global}
-            \newcommand{\pGlobalConfig}                     {\pGlobal/config/}
-                \newcommand{\pGlobalConfigCommon}   {\pGlobalConfig/common/}
-                \newcommand{\pGlobalConfigDocs}   {\pGlobalConfig/docs/}
+\newcommand{\type} {docs}
+\newcommand{\pGithub} {\HomePath/GitHub/}
+\newcommand{\pGenesis} {\pGithub/genesis/}
+\newcommand{\pType} {\pGenesis/\type/}
+\newcommand{\pProj} {\pGenesis/\type/lyapunov}
+\newcommand{\pGlob} {\pGenesis/global/}
+\newcommand{\pGlobConf} {\pGlob/config/}
+\newcommand{\pGlobConfCom} {\pGlobConf/common/}
+\newcommand{\pGlobConfType} {\pGlobConf/\type/}
+
+\typeout{  **  **  **  **  **  Begin configuration sequence: Global, Pres, Local}
+\typeout{  **  **  **  **  **  pGlobConfType = \pGlobConfType}
 
 % Load Global Setup Files
-\input{\pGlobalConfigCommon/"config-common.tex"}
-\input{\pGlobalConfigDocs/"config-docs.tex"}
+\input{\pGlobConfCom/"config-common-01.tex"}
+\input{\pGlobConfType/"config-type.tex"}
 \input{\pConfig/"config-local.tex"}
 
 % ===========================================================
@@ -48,14 +52,14 @@
 %   theorems.tex
 
 % Choose hyperlink configuration:
-\input{\pGlobalConfigCommon/"href-hidden.tex"}   % For hidden links (clean, professional)
-% \input{\pGlobalConfigCommon/"href-visible.tex"} % For visible links (debugging, drafts)
+\input{\pGlobConfCom/"href-hidden.tex"}   % For hidden links (clean, professional)
+% \input{\pGlobConfCom/"href-visible.tex"} % For visible links (debugging, drafts)
 
 %\usepackage[printwatermark]{xwatermark}
 %	\newwatermark[ allpages, color=red!5, angle=45, scale=3, xpos=0, ypos=0 ]{DRAFT}
 
 %   --   --   --   --   --   --   --   --   --   -- Bibliography
-\input{\pGlobalConfigCommon/"bib-config-a.tex"}
+\input{\pGlobConfCom/"bib-config-a.tex"}
 \addbibresource{\pBibs/lyapunov.bib}
 %\addbibresource{\pBibs/alternative.bib}
 

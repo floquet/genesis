@@ -4,7 +4,7 @@
 % Beamer likes biber
 \documentclass[10pt, oneside]{article}
 
-% Created by /Users/dantopa//genesis/scripts/new-docs.sh at 2024-12-28 12:43:27
+% Created by /Users/dantopa//genesis/scripts/new-docs.sh at 2024-12-29 19:26:59
 
 % Fetch home directory: make this file independent of file system
 \usepackage{catchfile}
@@ -15,17 +15,22 @@
 \makeatletter
 \edef\HomePath{\expandafter\zap@space\HomePath \@empty}
 \makeatother
+\newcommand{\type} {docs}
 \newcommand{\pGithub} {\HomePath/GitHub/}
-    \newcommand{\pTrunk} {\pGithub/genesis/}
-        \newcommand{\pDocs} {\pTrunk/docs/}
-            \newcommand{\pWorkspace} {\pDocs/delete}
-        \newcommand{\pGlobal} {\pTrunk/global}
-            \newcommand{\pGlobalConfig} {\pGlobal/config/}
-                \newcommand{\pGlobalConfigCommon} {\pGlobalConfig/common/}
+\newcommand{\pGenesis} {\pGithub/genesis/}
+\newcommand{\pType} {\pGenesis/\type/}
+\newcommand{\pProj} {\pGenesis/\type/delete}
+\newcommand{\pGlob} {\pGenesis/global/}
+\newcommand{\pGlobConf} {\pGlob/config/}
+\newcommand{\pGlobConfCom} {\pGlobConf/common/}
+\newcommand{\pGlobConfType} {\pGlobConf/\type/}
+
+\typeout{  **  **  **  **  **  Begin configuration sequence: Global, Pres, Local}
+\typeout{  **  **  **  **  **  pGlobConfType = \pGlobConfType}
 
 % Load Global Setup Files
-\input{\pGlobalConfigCommon/"config-common.tex"}
-\input{\pGlobalConfigDocs/"config-docs.tex"}
+\input{\pGlobConfCom/"config-common-01.tex"}
+\input{\pGlobConfType/"config-type.tex"}
 \input{\pConfig/"config-local.tex"}
 
 % ===========================================================
@@ -40,21 +45,21 @@
 %   listings-codes.tex
 %   num-components.tex
 %   num-list.tex
-%   packages-common.tex
 %   paths-global.tex
-%   paths-local.tex}
+%   paths-local.tex
 %   paths-bitbucket
 %   theorems.tex
+%   packages-common.tex
 
 % Choose hyperlink configuration:
-\input{\pGlobalConfigCommon/"href-hidden.tex"}   % For hidden links (clean, professional)
-% \input{\pGlobalConfigCommon/"href-visible.tex"} % For visible links (debugging, drafts)
+\input{\pGlobConfCom/"href-hidden.tex"}   % For hidden links (clean, professional)
+% \input{\pGlobConfCom/"href-visible.tex"} % For visible links (debugging, drafts)
 
 %\usepackage[printwatermark]{xwatermark}
 %	\newwatermark[ allpages, color=red!5, angle=45, scale=3, xpos=0, ypos=0 ]{DRAFT}
 
 %   --   --   --   --   --   --   --   --   --   -- Bibliography
-\input{\pGlobalConfigCommon/"bib-config-a.tex"}
+\input{\pGlobConfCom/"bib-config-a.tex"}
 \addbibresource{\pBibs/delete.bib}
 %\addbibresource{\pBibs/alternative.bib}
 

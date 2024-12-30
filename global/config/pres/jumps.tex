@@ -1,5 +1,5 @@
-% \input{\pGlobalConfigPres/"jumps.tex"}
-\typeout{  ++  ++  ++  ++  ++  \pGlobalConfigPres/"jumps.tex"}
+% \input{\pGlobConfType/"jumps.tex"}
+\typeout{  ++  ++  ++  ++  ++  \pGlobConfType/"jumps.tex"}
 
 % Define transition markers for subsections and sections
 \newcommand{\jumpLittle}{\twodots} % Use existing \twodots or customize
@@ -13,7 +13,7 @@
 }
 
 % Automatically add \jumpLittle at the end of a subsection
-\let\oldsubsection\subsection
+\let\oldsubsection\subsectionIt
 \renewcommand{\subsection}[2][]{%
     \jumpLittle % Add at the end of the previous subsection
     \oldsubsection[#1]{#2} % Call original \subsection command

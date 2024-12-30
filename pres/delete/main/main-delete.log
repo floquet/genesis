@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  28 DEC 2024 22:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  29 DEC 2024 22:07
 entering extended mode
- \write18 enabled.
- file:line:error style messages enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **main-delete.tex
 (./main-delete.tex
@@ -708,15 +707,20 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 ))
 (|kpsewhich -var-value=HOME)
  ** ** ** ** ** Begin configuration sequence: Global, Pres, Local
-(/Users/dantopa/GitHub//genesis//global/config//common//config-common.tex
- == == == == == /Users/dantopa/GitHub//genesis//global/config//common//"config-
-common.tex"
-(/Users/dantopa/GitHub//genesis//global/config//common//hyperlinks-global.tex
- == == == == == /Users/dantopa/GitHub//genesis//global/config//common//"hyperli
-nks-global.tex"
-) (/Users/dantopa/GitHub//genesis//global/config//common//listings-codes.tex
- == == == == == /Users/dantopa/GitHub//genesis//global/config//common//"listing
-s-codes.tex"
+ ** ** ** ** ** pGlobConfCom = /Users/dantopa//GitHub//genesis//global//config/
+/common/
+ ** ** ** ** ** pGlobConfType = /Users/dantopa//GitHub//genesis//global//config
+//pres/
+(/Users/dantopa//GitHub//genesis//global//config//common//config-common-01.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"confi
+g-common-01.tex"
+
+(/Users/dantopa//GitHub//genesis//global//config//common//hyperlinks-global.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"hyper
+links-global.tex"
+) (/Users/dantopa//GitHub//genesis//global//config//common//listings-codes.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"listi
+ngs-codes.tex"
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count345
 \lst@gtempboxa=\box77
@@ -746,12 +750,12 @@ File: listings.cfg 2024/09/23 1.10c listings configuration
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
 File: lststyles.tex 2024/11/26 Custom Listings Styles
 )
-(/Users/dantopa/GitHub//genesis//global/config//common//num-components.tex
- == == == == == /Users/dantopa/GitHub//genesis//global/config//common//"numberi
-ng-global.tex"
-) (/Users/dantopa/GitHub//genesis//global/config//common//num-list.tex
- == == == == == /Users/dantopa/GitHub//genesis//global/config//common//"num-lis
-t.tex"
+(/Users/dantopa//GitHub//genesis//global//config//common//num-components.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"numbe
+ring-global.tex"
+) (/Users/dantopa//GitHub//genesis//global//config//common//num-list.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"num-l
+ist.tex"
 (/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip66
@@ -763,18 +767,18 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 )
 \c@saveenumi=\count355
 )
-(/Users/dantopa/GitHub//genesis//global/config//common//paths-global.tex
- == == == == == /Users/dantopa/GitHub//genesis//global/config//common//"paths-g
-lobal.tex"
-) (/Users/dantopa/GitHub//genesis//global/config//common//paths-local.tex
- == == == == == /Users/dantopa/GitHub//genesis//global/config//common//"paths-l
-ocal.tex"
-) (/Users/dantopa/GitHub//genesis//global/config//common//paths-bitbucket.tex
- == == == == == /Users/dantopa/GitHub//genesis//global/config//common//"paths-b
-itbucket"
-) (/Users/dantopa/GitHub//genesis//global/config//common//packages-common.tex
- == == == == == /Users/dantopa/GitHub//genesis//global/config//common//"package
-s-common.tex"
+(/Users/dantopa//GitHub//genesis//global//config//common//paths-global-01.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"paths
+-global-01.tex"
+) (/Users/dantopa//GitHub//genesis//global//config//common//paths-local-01.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"paths
+-local-01.tex"
+) (/Users/dantopa//GitHub//genesis//global//config//common//paths-bitbucket.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"paths
+-bitbucket"
+) (/Users/dantopa//GitHub//genesis//global//config//common//packages-common.tex
+ == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"packa
+ges-common.tex"
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
 
@@ -1111,11 +1115,4 @@ File: pppdftex.def 2024/10/28 v0.6c Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count394
 \AM@pagebox=\box137
-\AM@global@opts=\toks52
-\AM@pagecnt=\count395
-\AM@toc@title=\toks53
-\AM@lof@heading=\toks54
-\c@AM@survey=\count396
-\AM@templatesizebox=\box138
-))
-(/Users/dantopa/GitHub//genesis//global/config//common//t
+\

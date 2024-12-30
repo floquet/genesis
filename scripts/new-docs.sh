@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-
-# Print script start information
 printf "%s\n" "$(tput bold)$(date) ${BASH_SOURCE[0]}$(tput sgr0)"
 
 # ===========================================================
@@ -26,18 +24,18 @@ printf "%s\n" "$(tput bold)$(date) ${BASH_SOURCE[0]}$(tput sgr0)"
 #
 # Example usage:
 # 1. Create a document in the default directory:
-#      ./new-doc.sh hpc-pdes
+#      ./new-docs.sh hpc-pdes
 #    This will create the directory structure under:
 #      ~/GitHub/genesis/docs/hpc-pdes
 #
 # 2. Create a document in the current directory using --local:
-#      ./new-doc.sh --local hpc-pdes
+#      ./new-docs.sh --local hpc-pdes
 #    This will create the directory structure in the current working directory.
 #
 # 3. Using an alias for convenience:
 #      alias new-doc="~/GitHub/genesis/scripts/new-doc.sh"
 #    Then simply run:
-#      new-doc hpc-pdes
+#      new-docs hpc-pdes
 #
 # Notes:
 # - The script ensures a consistent document structure and places files in the
@@ -50,7 +48,7 @@ printf "%s\n" "$(tput bold)$(date) ${BASH_SOURCE[0]}$(tput sgr0)"
 # By setting up the foundation programmatically, your time is freed 
 # for more creative and technical pursuits.
 
-# Example usage: ./new-doc.sh hpc-pdes
+# Example usage: ./new-docs.sh hpc-pdes
 
 # Record the start time
 start_time=$SECONDS  
@@ -81,7 +79,7 @@ function new_step() {
 
 # Validate and set up the document directory
 DOCUMENT_NAME=$1
-new_step "Define document directory"
+new_step "Define document directory $BASE_DIR/$DOCUMENT_NAME"
 DOCUMENT_DIR="$BASE_DIR/$DOCUMENT_NAME"
 if mkdir -p "$DOCUMENT_DIR"; then
     echo "Created document directory: $DOCUMENT_DIR"
@@ -135,17 +133,22 @@ cat << EOF > "$DOCUMENT_DIR/main/main-$DOCUMENT_NAME.tex"
 \makeatletter
 \edef\HomePath{\expandafter\zap@space\HomePath \@empty}
 \makeatother
+\newcommand{\type} {docs}
 \newcommand{\pGithub} {\HomePath/GitHub/}
-    \newcommand{\pTrunk} {\pGithub/genesis/}
-        \newcommand{\pDocs} {\pTrunk/docs/}
-            \newcommand{\pWorkspace} {\pDocs/${DOCUMENT_NAME}}
-        \newcommand{\pGlobal} {\pTrunk/global}
-            \newcommand{\pGlobalConfig} {\pGlobal/config/}
-                \newcommand{\pGlobalConfigCommon} {\pGlobalConfig/common/}
+\newcommand{\pGenesis} {\pGithub/genesis/}
+\newcommand{\pType} {\pGenesis/\type/}
+\newcommand{\pProj} {\pGenesis/\type/$DOCUMENT_NAME}
+\newcommand{\pGlob} {\pGenesis/global/}
+\newcommand{\pGlobConf} {\pGlob/config/}
+\newcommand{\pGlobConfCom} {\pGlobConf/common/}
+\newcommand{\pGlobConfType} {\pGlobConf/\type/}
+
+\typeout{  **  **  **  **  **  Begin configuration sequence: Global, Pres, Local}
+\typeout{  **  **  **  **  **  pGlobConfType = \pGlobConfType}
 
 % Load Global Setup Files
-\input{\pGlobalConfigCommon/"config-common.tex"}
-\input{\pGlobalConfigDocs/"config-docs.tex"}
+\input{\pGlobConfCom/"config-common-01.tex"}
+\input{\pGlobConfType/"config-type.tex"}
 \input{\pConfig/"config-local.tex"}
 
 % ===========================================================
@@ -160,21 +163,21 @@ cat << EOF > "$DOCUMENT_DIR/main/main-$DOCUMENT_NAME.tex"
 %   listings-codes.tex
 %   num-components.tex
 %   num-list.tex
-%   packages-common.tex
 %   paths-global.tex
-%   paths-local.tex}
+%   paths-local.tex
 %   paths-bitbucket
 %   theorems.tex
+%   packages-common.tex
 
 % Choose hyperlink configuration:
-\input{\pGlobalConfigCommon/"href-hidden.tex"}   % For hidden links (clean, professional)
-% \input{\pGlobalConfigCommon/"href-visible.tex"} % For visible links (debugging, drafts)
+\input{\pGlobConfCom/"href-hidden.tex"}   % For hidden links (clean, professional)
+% \input{\pGlobConfCom/"href-visible.tex"} % For visible links (debugging, drafts)
 
 %\usepackage[printwatermark]{xwatermark}
 %	\newwatermark[ allpages, color=red!5, angle=45, scale=3, xpos=0, ypos=0 ]{DRAFT}
 
 %   --   --   --   --   --   --   --   --   --   -- Bibliography
-\input{\pGlobalConfigCommon/"bib-config-a.tex"}
+\input{\pGlobConfCom/"bib-config-a.tex"}
 \addbibresource{\pBibs/$DOCUMENT_NAME.bib}
 %\addbibresource{\pBibs/alternative.bib}
 

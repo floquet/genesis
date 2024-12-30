@@ -1,0 +1,14 @@
+/Users/dantopa//GitHub//genesis//global//config//pres//config-type.tex
+/Users/dantopa//GitHub//genesis//global//config//pres//aesthetics.tex
+/Users/dantopa//GitHub//genesis//global//config//pres//jumps.tex
+/Users/dantopa//GitHub//genesis//global//config//pres//packages-type.tex
+/Users/dantopa//GitHub//genesis//global//config//pres//theorems-type.tex
+/Users/dantopa//GitHub//genesis//global//config//common//config-common-01.tex
+/Users/dantopa//GitHub//genesis//global//config//common//hyperlinks-global.tex
+/Users/dantopa//GitHub//genesis//global//config//common//listings-codes.tex
+/Users/dantopa//GitHub//genesis//global//config//common//num-components.tex
+/Users/dantopa//GitHub//genesis//global//config//common//num-list.tex
+/Users/dantopa//GitHub//genesis//global//config//common//paths-global-01.tex
+/Users/dantopa//GitHub//genesis//global//config//common//paths-local-01.tex
+/Users/dantopa//GitHub//genesis//global//config//common//paths-bitbucket.tex
+/Users/dantopa//GitHub//genesis//global//config//common//packages-common.tex

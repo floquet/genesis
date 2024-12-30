@@ -1,0 +1,13 @@
+\documentclass[10pt, oneside]{pres}
+\usepackage{catchfile}
+\CatchFileDef{\HomePath}{|kpsewhich -var-value=HOME}{}
+% Base paths
+\newcommand{\type} {pres}
+\newcommand{\pProj} {\HomePath/GitHub/genesis/pres/demo/}
+% Load configuration
+\input{\pProj/config/config-local.tex}
+\begin{document}
+\maketitle
+\tableofcontents
+\input{\pProj/sections/sec-intro.tex}
+\end{document}

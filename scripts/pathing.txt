@@ -1,0 +1,54 @@
+.
+├── config
+│   ├── common
+│   │   ├── bib-config-a.tex
+│   │   ├── config-common.tex
+│   │   ├── href-hidden.tex
+│   │   ├── href-visible.tex
+│   │   ├── hyperlinks-common.tex
+│   │   ├── hyperlinks-global.tex
+│   │   ├── libs.tex
+│   │   ├── listings-codes.tex
+│   │   ├── num-components.tex
+│   │   ├── num-list.tex
+│   │   ├── packages-common.tex
+│   │   ├── paths-bitbucket.tex
+│   │   ├── paths-global.tex
+│   │   ├── paths-local.tex
+│   │   └── theorems.tex
+│   ├── docs
+│   │   ├── config-docs.tex
+│   │   └── packages-docs.tex
+│   └── pres
+│       ├── aesthetics.tex
+│       ├── config-pres.tex
+│       ├── jumps.tex
+│       └── packages-pres.tex
+├── graphics
+│   └── logos
+│       ├── af-01.png
+│       ├── af.jpg
+│       ├── af.xcf
+│       ├── afrl-logo.png
+│       ├── hii-01.png
+│       ├── hii.pdf
+│       ├── hii.xcf
+│       └── sf-best.png
+└── libs
+    ├── lib-colors-modern.tex
+    ├── lib-delimiters-modern.tex
+    └── lib-norms-modern.tex
+
+8 directories, 32 files
+
+
+\newcommand{\pGithub}{\HomePath/GitHub/} *
+\newcommand{\pGenesis}{\pGithub/genesis/} *
+\newcommand{\pBibs}{\pGenesis/bibs/}
+\newcommand{\pBibs}{\pGenesis/libs/}
+\newcommand{\pGlob}{\pGenesis/global/} *
+\newcommand{\pGlobConf}{\pGlob/config/} *
+\newcommand{\pGlobConfCom}{\pGlobConf/common/} *
+
+\newcommand{\pType}{\pGenesis/pres/}
+\newcommand{\pProj}{\pGenesis/pres/project}
