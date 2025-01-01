@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  29 DEC 2024 22:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  31 DEC 2024 22:45
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **main-delete.tex
 (./main-delete.tex
@@ -707,20 +708,20 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 ))
 (|kpsewhich -var-value=HOME)
  ** ** ** ** ** Begin configuration sequence: Global, Pres, Local
- ** ** ** ** ** pGlobConfCom = /Users/dantopa//GitHub//genesis//global//config/
-/common/
- ** ** ** ** ** pGlobConfType = /Users/dantopa//GitHub//genesis//global//config
-//pres/
-(/Users/dantopa//GitHub//genesis//global//config//common//config-common-01.tex
- == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"confi
-g-common-01.tex"
-
-(/Users/dantopa//GitHub//genesis//global//config//common//hyperlinks-global.tex
- == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"hyper
-links-global.tex"
-) (/Users/dantopa//GitHub//genesis//global//config//common//listings-codes.tex
- == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"listi
-ngs-codes.tex"
+ ** ** ** ** ** pGlobConfCom = /Users/dantopa/GitHub//genesis//global//config//
+common/
+ ** ** ** ** ** pGlobConfType = /Users/dantopa/GitHub//genesis//global//config/
+/pres/
+(/Users/dantopa/GitHub//genesis//global//config//common//config-common-01.tex
+ == == == == == /Users/dantopa/GitHub//genesis//global//config//common//"config
+-common-01.tex"
+ == Shared Configuration for documents and presentations == 
+(/Users/dantopa/GitHub//genesis//global//config//common//hyperlinks-global.tex
+ == == == == == /Users/dantopa/GitHub//genesis//global//config//common//"hyperl
+inks-global.tex"
+) (/Users/dantopa/GitHub//genesis//global//config//common//listings-codes.tex
+ == == == == == /Users/dantopa/GitHub//genesis//global//config//common//"listin
+gs-codes.tex"
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count345
 \lst@gtempboxa=\box77
@@ -750,12 +751,12 @@ File: listings.cfg 2024/09/23 1.10c listings configuration
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
 File: lststyles.tex 2024/11/26 Custom Listings Styles
 )
-(/Users/dantopa//GitHub//genesis//global//config//common//num-components.tex
- == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"numbe
-ring-global.tex"
-) (/Users/dantopa//GitHub//genesis//global//config//common//num-list.tex
- == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"num-l
-ist.tex"
+(/Users/dantopa/GitHub//genesis//global//config//common//num-components.tex
+ == == == == == /Users/dantopa/GitHub//genesis//global//config//common//"number
+ing-global.tex"
+) (/Users/dantopa/GitHub//genesis//global//config//common//num-list.tex
+ == == == == == /Users/dantopa/GitHub//genesis//global//config//common//"num-li
+st.tex"
 (/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip66
@@ -767,18 +768,18 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 )
 \c@saveenumi=\count355
 )
-(/Users/dantopa//GitHub//genesis//global//config//common//paths-global-01.tex
- == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"paths
--global-01.tex"
-) (/Users/dantopa//GitHub//genesis//global//config//common//paths-local-01.tex
- == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"paths
--local-01.tex"
-) (/Users/dantopa//GitHub//genesis//global//config//common//paths-bitbucket.tex
- == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"paths
--bitbucket"
-) (/Users/dantopa//GitHub//genesis//global//config//common//packages-common.tex
- == == == == == /Users/dantopa//GitHub//genesis//global//config//common//"packa
-ges-common.tex"
+(/Users/dantopa/GitHub//genesis//global//config//common//paths-global-01.tex
+ == == == == == /Users/dantopa/GitHub//genesis//global//config//common//"paths-
+global-01.tex"
+) (/Users/dantopa/GitHub//genesis//global//config//common//paths-local-01.tex
+ == == == == == /Users/dantopa/GitHub//genesis//global//config//common//"paths-
+local-01.tex"
+) (/Users/dantopa/GitHub//genesis//global//config//common//paths-bitbucket.tex
+ == == == == == /Users/dantopa/GitHub//genesis//global//config//common//"paths-
+bitbucket"
+) (/Users/dantopa/GitHub//genesis//global//config//common//packages-common.tex
+ == == == == == /Users/dantopa/GitHub//genesis//global//config//common//"packag
+es-common.tex"
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
 
@@ -1115,4 +1116,1136 @@ File: pppdftex.def 2024/10/28 v0.6c Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count394
 \AM@pagebox=\box137
-\
+\AM@global@opts=\toks52
+\AM@pagecnt=\count395
+\AM@toc@title=\toks53
+\AM@lof@heading=\toks54
+\c@AM@survey=\count396
+\AM@templatesizebox=\box138
+)))
+(/Users/dantopa/GitHub//genesis//global//config//pres//config-type.tex
+ ++ ++ ++ ++ ++ /Users/dantopa/GitHub//genesis//global//config//pres//"config-t
+ype.tex"
+(/Users/dantopa/GitHub//genesis//global//config//pres//aesthetics.tex
+ ++ ++ ++ ++ ++ /Users/dantopa/GitHub//genesis//global//config//pres//"aestheti
+cs.tex"
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerthemeCopenhagen.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemesplit.sty)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.st
+y)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerfontthemestructurebo
+ld.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty))
+(/Users/dantopa/GitHub//genesis//global//config//pres//jumps.tex
+ ++ ++ ++ ++ ++ /Users/dantopa/GitHub//genesis//global//config//pres//"jumps.te
+x"
+) (/Users/dantopa/GitHub//genesis//global//config//pres//packages-type.tex
+ ++ ++ ++ ++ ++ /Users/dantopa/GitHub//genesis//global//config//pres//"packages
+-pres.tex"
+(/usr/local/texlive/2024/texmf-dist/tex/latex/textpos/textpos.sty
+Package: textpos 2022/07/23 v1.10.1
+Package textpos Info: choosing support for LaTeX3 on input line 60.
+\TP@textbox=\box139
+\TP@holdbox=\box140
+\TPHorizModule=\dimen370
+\TPVertModule=\dimen371
+\TP@margin=\dimen372
+\TP@absmargin=\dimen373
+
+Grid set 16 x 16 = 22.7622pt x 17.07166pt
+\TPboxrulesize=\dimen374
+\TP@ox=\dimen375
+\TP@oy=\dimen376
+\TP@tbargs=\toks55
+TextBlockOrigin set to 0pt x 0pt
+)) (/Users/dantopa/GitHub//genesis//global//config//pres//theorems-type-01.tex
+ ++ ++ ++ ++ ++ /Users/dantopa/GitHub//genesis//global//config//pres//"theorems
+-type.tex"
+)) (/Users/dantopa/GitHub//genesis//pres/delete/config//config-local.tex)
+(/Users/dantopa/GitHub//genesis//global//config//common//href-hidden.tex
+ == == == == == /Users/dantopa/GitHub//genesis//global//config//common//"href-h
+idden.tex"
+) (/Users/dantopa/GitHub//genesis//global//config//common//bib-config-a.tex
+ == == == == == /Users/dantopa/GitHub//genesis//global//config//common//"bib-co
+nfig-a.tex"
+(/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count397
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count398
+\c@listtotal=\count399
+\c@listcount=\count400
+\c@liststart=\count401
+\c@liststop=\count402
+\c@citecount=\count403
+\c@citetotal=\count404
+\c@multicitecount=\count405
+\c@multicitetotal=\count406
+\c@instcount=\count407
+\c@maxnames=\count408
+\c@minnames=\count409
+\c@maxitems=\count410
+\c@minitems=\count411
+\c@citecounter=\count412
+\c@maxcitecounter=\count413
+\c@savedcitecounter=\count414
+\c@uniquelist=\count415
+\c@uniquename=\count416
+\c@refsection=\count417
+\c@refsegment=\count418
+\c@maxextratitle=\count419
+\c@maxextratitleyear=\count420
+\c@maxextraname=\count421
+\c@maxextradate=\count422
+\c@maxextraalpha=\count423
+\c@abbrvpenalty=\count424
+\c@highnamepenalty=\count425
+\c@lownamepenalty=\count426
+\c@maxparens=\count427
+\c@parenlevel=\count428
+\blx@tempcnta=\count429
+\blx@tempcntb=\count430
+\blx@tempcntc=\count431
+\c@blx@maxsection=\count432
+\blx@maxsegment@0=\count433
+\blx@notetype=\count434
+\blx@parenlevel@text=\count435
+\blx@parenlevel@foot=\count436
+\blx@sectionciteorder@0=\count437
+\blx@sectionciteorderinternal@0=\count438
+\blx@entrysetcounter=\count439
+\blx@biblioinstance=\count440
+\labelnumberwidth=\skip78
+\labelalphawidth=\skip79
+\biblabelsep=\skip80
+\bibitemsep=\skip81
+\bibnamesep=\skip82
+\bibinitsep=\skip83
+\bibparsep=\skip84
+\bibhang=\skip85
+\blx@bcfin=\read4
+\blx@bcfout=\write5
+\blx@langwohyphens=\language89
+\c@mincomprange=\count441
+\c@maxcomprange=\count442
+\c@mincompwidth=\count443
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count444
+\c@savedafterword=\count445
+\c@annotator=\count446
+\c@savedannotator=\count447
+\c@author=\count448
+\c@savedauthor=\count449
+\c@bookauthor=\count450
+\c@savedbookauthor=\count451
+\c@commentator=\count452
+\c@savedcommentator=\count453
+\c@editor=\count454
+\c@savededitor=\count455
+\c@editora=\count456
+\c@savededitora=\count457
+\c@editorb=\count458
+\c@savededitorb=\count459
+\c@editorc=\count460
+\c@savededitorc=\count461
+\c@foreword=\count462
+\c@savedforeword=\count463
+\c@holder=\count464
+\c@savedholder=\count465
+\c@introduction=\count466
+\c@savedintroduction=\count467
+\c@namea=\count468
+\c@savednamea=\count469
+\c@nameb=\count470
+\c@savednameb=\count471
+\c@namec=\count472
+\c@savednamec=\count473
+\c@translator=\count474
+\c@savedtranslator=\count475
+\c@shortauthor=\count476
+\c@savedshortauthor=\count477
+\c@shorteditor=\count478
+\c@savedshorteditor=\count479
+\c@labelname=\count480
+\c@savedlabelname=\count481
+\c@institution=\count482
+\c@savedinstitution=\count483
+\c@lista=\count484
+\c@savedlista=\count485
+\c@listb=\count486
+\c@savedlistb=\count487
+\c@listc=\count488
+\c@savedlistc=\count489
+\c@listd=\count490
+\c@savedlistd=\count491
+\c@liste=\count492
+\c@savedliste=\count493
+\c@listf=\count494
+\c@savedlistf=\count495
+\c@location=\count496
+\c@savedlocation=\count497
+\c@organization=\count498
+\c@savedorganization=\count499
+\c@origlocation=\count500
+\c@savedoriglocation=\count501
+\c@origpublisher=\count502
+\c@savedorigpublisher=\count503
+\c@publisher=\count504
+\c@savedpublisher=\count505
+\c@language=\count506
+\c@savedlanguage=\count507
+\c@origlanguage=\count508
+\c@savedoriglanguage=\count509
+\c@pageref=\count510
+\c@savedpageref=\count511
+\shorthandwidth=\skip86
+\shortjournalwidth=\skip87
+\shortserieswidth=\skip88
+\shorttitlewidth=\skip89
+\shortauthorwidth=\skip90
+\shorteditorwidth=\skip91
+\locallabelnumberwidth=\skip92
+\locallabelalphawidth=\skip93
+\localshorthandwidth=\skip94
+\localshortjournalwidth=\skip95
+\localshortserieswidth=\skip96
+\localshorttitlewidth=\skip97
+\localshortauthorwidth=\skip98
+\localshorteditorwidth=\skip99
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count512
+\c@textcitetotal=\count513
+\c@textcitemaxnames=\count514
+\c@biburlbigbreakpenalty=\count515
+\c@biburlbreakpenalty=\count516
+\c@biburlnumpenalty=\count517
+\c@biburlucpenalty=\count518
+\c@biburllcpenalty=\count519
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count520
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count521
+\c@bbx:relatedtotal=\count522
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-11-02 L3 programming layer (loader) 
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count523
+\l__pdf_internal_box=\box141
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2024-11-02 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+)))
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 79.
+
+\@quotelevel=\count524
+\@quotereset=\count525
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 8
+4.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 84.
+ (./main-delete.aux)
+\openout1 = `main-delete.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=307.28987pt
+* \textheight=244.6939pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count526
+\scratchdimen=\dimen377
+\scratchbox=\box142
+\nofMPsegments=\count527
+\nofMParguments=\count528
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count529
+\MPscratchDim=\dimen378
+\MPnumerator=\count530
+\makeMPintoPDFobject=\count531
+\everyMPtoPDFconversion=\toks57
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring OFF on input line 84.
+
+(./main-delete.out) (./main-delete.out)
+\@outlinefile=\write6
+\openout6 = `main-delete.out'.
+
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-dicti
+onary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-bibliograph
+y-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-environment
+-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-months-dict
+ionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-numbers-dic
+tionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-theorem-dic
+tionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+\c@lstlisting=\count532
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.st
+y
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout5 = `main-delete.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main-delete.bbl' found.
+
+(./main-delete.bbl)
+Package biblatex Info: Reference section=0 on input line 84.
+Package biblatex Info: Reference segment=0 on input line 84.
+ (./main-delete.nav)
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 84.
+</Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png, id=41, 1
+003.75pt x 326.21875pt>
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png Grap
+hic file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/afrl-logo.png  used on input line 84.
+(pdftex.def)             Requested size: 43.77304pt x 14.22636pt.
+</Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png, id=44, 177.6
+6376pt x 156.585pt>
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png Graphic 
+file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/af-01.png  used on input line 84.
+(pdftex.def)             Requested size: 14.84773pt x 13.08846pt.
+</Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png, id=46, 152
+5.7pt x 1525.7pt>
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png Graphi
+c file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/sf-best.png  used on input line 84.
+(pdftex.def)             Requested size: 16.20306pt x 16.21828pt.
+</Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png, id=48, 62.1
+522pt x 65.043pt>
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png Graphic
+ file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/hii-01.png  used on input line 84.
+(pdftex.def)             Requested size: 13.59386pt x 14.22636pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png Grap
+hic file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/afrl-logo.png  used on input line 88.
+(pdftex.def)             Requested size: 43.77304pt x 14.22636pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png Graphic 
+file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/af-01.png  used on input line 88.
+(pdftex.def)             Requested size: 14.84773pt x 13.08846pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png Graphi
+c file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/sf-best.png  used on input line 88.
+(pdftex.def)             Requested size: 16.20306pt x 16.21828pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png Graphic
+ file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/hii-01.png  used on input line 88.
+(pdftex.def)             Requested size: 13.59386pt x 14.22636pt.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 88.
+
+
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <4> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 88.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png Grap
+hic file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/afrl-logo.png  used on input line 88.
+(pdftex.def)             Requested size: 43.77304pt x 14.22636pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png Graphic 
+file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/af-01.png  used on input line 88.
+(pdftex.def)             Requested size: 14.84773pt x 13.08846pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png Graphi
+c file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/sf-best.png  used on input line 88.
+(pdftex.def)             Requested size: 16.20306pt x 16.21828pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png Graphic
+ file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/hii-01.png  used on input line 88.
+(pdftex.def)             Requested size: 13.59386pt x 14.22636pt.
+
+Overfull \hbox (1.46664pt too wide) has occurred while \output is active
+[][][] [][][] 
+ []
+
+[1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/l
+ocal/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}
+
+ </Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png> </Users
+/dantopa/GitHub//genesis//global//graphics/logos/af-01.png> </Users/dantopa/Git
+Hub//genesis//global//graphics/logos/sf-best.png> </Users/dantopa/GitHub//genes
+is//global//graphics/logos/hii-01.png>]
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png Grap
+hic file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/afrl-logo.png  used on input line 92.
+(pdftex.def)             Requested size: 43.77304pt x 14.22636pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png Graphic 
+file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/af-01.png  used on input line 92.
+(pdftex.def)             Requested size: 14.84773pt x 13.08846pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png Graphi
+c file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/sf-best.png  used on input line 92.
+(pdftex.def)             Requested size: 16.20306pt x 16.21828pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png Graphic
+ file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/hii-01.png  used on input line 92.
+(pdftex.def)             Requested size: 13.59386pt x 14.22636pt.
+ (./main-delete.toc)
+
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png Grap
+hic file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/afrl-logo.png  used on input line 92.
+(pdftex.def)             Requested size: 43.77304pt x 14.22636pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png Graphic 
+file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/af-01.png  used on input line 92.
+(pdftex.def)             Requested size: 14.84773pt x 13.08846pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png Graphi
+c file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/sf-best.png  used on input line 92.
+(pdftex.def)             Requested size: 16.20306pt x 16.21828pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png Graphic
+ file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/hii-01.png  used on input line 92.
+(pdftex.def)             Requested size: 13.59386pt x 14.22636pt.
+
+Overfull \hbox (1.46664pt too wide) has occurred while \output is active
+[][][] [][][] 
+ []
+
+[2
+
+] (/Users/dantopa/GitHub//genesis//pres/delete/sections//sec-intro.tex
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png Grap
+hic file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/afrl-logo.png  used on input line 6.
+(pdftex.def)             Requested size: 43.77304pt x 14.22636pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png Graphic 
+file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/af-01.png  used on input line 6.
+(pdftex.def)             Requested size: 14.84773pt x 13.08846pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png Graphi
+c file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/sf-best.png  used on input line 6.
+(pdftex.def)             Requested size: 16.20306pt x 16.21828pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png Graphic
+ file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/hii-01.png  used on input line 6.
+(pdftex.def)             Requested size: 13.59386pt x 14.22636pt.
+
+
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png Grap
+hic file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/afrl-logo.png  used on input line 6.
+(pdftex.def)             Requested size: 43.77304pt x 14.22636pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png Graphic 
+file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/af-01.png  used on input line 6.
+(pdftex.def)             Requested size: 14.84773pt x 13.08846pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png Graphi
+c file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/sf-best.png  used on input line 6.
+(pdftex.def)             Requested size: 16.20306pt x 16.21828pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png Graphic
+ file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/hii-01.png  used on input line 6.
+(pdftex.def)             Requested size: 13.59386pt x 14.22636pt.
+
+Overfull \hbox (1.46664pt too wide) has occurred while \output is active
+[][][] [][][] 
+ []
+
+[3
+
+]) (/Users/dantopa/GitHub//genesis//pres/delete/sections//sec-backup.tex
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png Grap
+hic file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/afrl-logo.png  used on input line 6.
+(pdftex.def)             Requested size: 43.77304pt x 14.22636pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png Graphic 
+file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/af-01.png  used on input line 6.
+(pdftex.def)             Requested size: 14.84773pt x 13.08846pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png Graphi
+c file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/sf-best.png  used on input line 6.
+(pdftex.def)             Requested size: 16.20306pt x 16.21828pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png Graphic
+ file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/hii-01.png  used on input line 6.
+(pdftex.def)             Requested size: 13.59386pt x 14.22636pt.
+
+
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png Grap
+hic file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/afrl-logo.png  used on input line 6.
+(pdftex.def)             Requested size: 43.77304pt x 14.22636pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png Graphic 
+file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/af-01.png  used on input line 6.
+(pdftex.def)             Requested size: 14.84773pt x 13.08846pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png Graphi
+c file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/sf-best.png  used on input line 6.
+(pdftex.def)             Requested size: 16.20306pt x 16.21828pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png Graphic
+ file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/hii-01.png  used on input line 6.
+(pdftex.def)             Requested size: 13.59386pt x 14.22636pt.
+
+Overfull \hbox (1.46664pt too wide) has occurred while \output is active
+[][][] [][][] 
+ []
+
+[4
+
+])
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png Grap
+hic file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/afrl-logo.png  used on input line 103.
+(pdftex.def)             Requested size: 43.77304pt x 14.22636pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png Graphic 
+file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/af-01.png  used on input line 103.
+(pdftex.def)             Requested size: 14.84773pt x 13.08846pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png Graphi
+c file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/sf-best.png  used on input line 103.
+(pdftex.def)             Requested size: 16.20306pt x 16.21828pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png Graphic
+ file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/hii-01.png  used on input line 103.
+(pdftex.def)             Requested size: 13.59386pt x 14.22636pt.
+
+
+LaTeX Warning: Empty bibliography on input line 103.
+
+
+
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png Grap
+hic file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/afrl-logo.png  used on input line 103.
+(pdftex.def)             Requested size: 43.77304pt x 14.22636pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png Graphic 
+file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/af-01.png  used on input line 103.
+(pdftex.def)             Requested size: 14.84773pt x 13.08846pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png Graphi
+c file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/sf-best.png  used on input line 103.
+(pdftex.def)             Requested size: 16.20306pt x 16.21828pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png Graphic
+ file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/hii-01.png  used on input line 103.
+(pdftex.def)             Requested size: 13.59386pt x 14.22636pt.
+
+Overfull \hbox (1.46664pt too wide) has occurred while \output is active
+[][][] [][][] 
+ []
+
+[5
+
+]
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png Grap
+hic file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/afrl-logo.png  used on input line 107.
+(pdftex.def)             Requested size: 43.77304pt x 14.22636pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png Graphic 
+file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/af-01.png  used on input line 107.
+(pdftex.def)             Requested size: 14.84773pt x 13.08846pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png Graphi
+c file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/sf-best.png  used on input line 107.
+(pdftex.def)             Requested size: 16.20306pt x 16.21828pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png Graphic
+ file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/hii-01.png  used on input line 107.
+(pdftex.def)             Requested size: 13.59386pt x 14.22636pt.
+
+
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png Grap
+hic file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/afrl-logo.png  used on input line 107.
+(pdftex.def)             Requested size: 43.77304pt x 14.22636pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png Graphic 
+file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/af-01.png  used on input line 107.
+(pdftex.def)             Requested size: 14.84773pt x 13.08846pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png Graphi
+c file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/sf-best.png  used on input line 107.
+(pdftex.def)             Requested size: 16.20306pt x 16.21828pt.
+File: /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png Graphic
+ file (type png)
+<use /Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png>
+Package pdftex.def Info: /Users/dantopa/GitHub//genesis//global//graphics/logos
+/hii-01.png  used on input line 107.
+(pdftex.def)             Requested size: 13.59386pt x 14.22636pt.
+
+Overfull \hbox (1.46664pt too wide) has occurred while \output is active
+[][][] [][][] 
+ []
+
+[6
+
+]
+\tf@nav=\write7
+\openout7 = `main-delete.nav'.
+
+\tf@toc=\write8
+\openout8 = `main-delete.toc'.
+
+\tf@snm=\write9
+\openout9 = `main-delete.snm'.
+
+ (./main-delete.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 1
+L3 programming layer <2024-11-02>
+ ***********
+
+
+ *File List*
+  beamer.cls    2024/01/06 v3.71 A class for typesetting presentations
+beamerbasemodes.sty    
+etoolbox.sty    2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+beamerbasedecode.sty    
+   iftex.sty    2024/12/12 v1.0g TeX engine tests
+beamerbaseoptions.sty    
+  keyval.sty    2022/05/29 v1.15 key=value parser (DPC)
+geometry.sty    2020/01/02 v5.9 Page Geometry
+  ifvtex.sty    2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ pgfmath.sty    
+  pgfrcs.sty    2023-01-15 v3.1.10 (3.1.10)
+pgfrcs.code.tex
+ pgfkeys.sty    
+pgfkeys.code.tex
+pgfmath.code.tex
+  size11.clo    2024/06/29 v1.4n Standard LaTeX file (size option)
+ pgfcore.sty    2023-01-15 v3.1.10 (3.1.10)
+graphicx.sty    2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+graphics.sty    2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    2023/12/02 v1.11 sin cos tan (DPC)
+graphics.cfg    2016/06/04 v1.11 sample graphics configuration
+  pdftex.def    2024/04/13 v1.2c Graphics/color driver for pdftex
+  pgfsys.sty    2023-01-15 v3.1.10 (3.1.10)
+pgfsys.code.tex
+pgfsyssoftpath.code.tex    2023-01-15 v3.1.10 (3.1.10)
+pgfsysprotocol.code.tex    2023-01-15 v3.1.10 (3.1.10)
+  xcolor.sty    2024/09/29 v3.02 LaTeX color extensions (UK)
+   color.cfg    2016/01/02 v1.6 sample color configuration
+mathcolor.ltx
+pgfcore.code.tex
+ xxcolor.sty    2003/10/24 ver 0.1
+atbegshi-ltx.sty    2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+hyperref.sty    2024-11-05 v7.01l Hypertext links for LaTeX
+kvsetkeys.sty    2022-10-05 v1.19 Key value parser (HO)
+kvdefinekeys.sty    2019-12-19 v1.6 Define keys (HO)
+pdfescape.sty    2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ ltxcmds.sty    2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+pdftexcmds.sty    2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+infwarerr.sty    2019/12/03 v1.5 Providing info/warning/error messages (HO)
+ hycolor.sty    2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+ nameref.sty    2023-11-26 v2.56 Cross-referencing by name of section
+refcount.sty    2019/12/15 v3.6 Data extraction from label references (HO)
+gettitlestring.sty    2019/12/15 v1.6 Cleanup title references (HO)
+kvoptions.sty    2022-06-15 v3.15 Key value format for package options (HO)
+stringenc.sty    2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+  pd1enc.def    2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+ intcalc.sty    2019/12/15 v1.3 Expandable calculations with integers (HO)
+   puenc.def    2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+     url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
+  bitset.sty    2019/12/09 v1.3 Handle bit-vector datatype (HO)
+bigintcalc.sty    2019/12/15 v1.5 Expandable calculations on big integers (HO)
+ hpdftex.def    2024-11-05 v7.01l Hyperref driver for pdfTeX
+atveryend-ltx.sty    2020/08/19 v1.0a Emulation of the original atveryend packa
+ge
+with kernel methods
+rerunfilecheck.sty    2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+uniquecounter.sty    2019/12/15 v1.4 Provide unlimited unique counter (HO)
+beamerbaserequires.sty    
+beamerbasecompatibility.sty    
+beamerbasefont.sty    
+ amssymb.sty    2013/01/14 v3.01 AMS font symbols
+amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
+sansmathaccent.sty    2020/01/31
+scrlfile.sty    2024/10/24 v3.43 KOMA-Script package (file load hooks)
+scrlfile-hook.sty    2024/10/24 v3.43 KOMA-Script package (using LaTeX hooks)
+ scrlogo.sty    2024/10/24 v3.43 KOMA-Script package (logo)
+beamerbasetranslator.sty    
+translator.sty    2021-05-31 v1.12d Easy translation of strings in LaTeX
+beamerbasemisc.sty    
+beamerbasetwoscreens.sty    
+beamerbaseoverlay.sty    
+beamerbasetitle.sty    
+beamerbasesection.sty    
+beamerbaseframe.sty    
+beamerbaseverbatim.sty    
+beamerbaseframesize.sty    
+beamerbaseframecomponents.sty    
+beamerbasecolor.sty    
+beamerbasenotes.sty    
+beamerbasetoc.sty    
+beamerbasetemplates.sty    
+beamerbaseauxtemplates.sty    
+beamerbaseboxes.sty    
+beamerbaselocalstructure.sty    
+enumerate.sty    2023/07/04 v3.00 enumerate extensions (DPC)
+beamerbasenavigation.sty    
+beamerbasenavigationsymbols.tex
+beamerbasetheorems.sty    
+ amsmath.sty    2024/11/05 v2.17t AMS math features
+ amstext.sty    2021/08/26 v2.01 AMS text
+  amsgen.sty    1999/11/30 v2.0 generic functions
+  amsbsy.sty    1999/11/29 v1.2d Bold Symbols
+  amsopn.sty    2022/04/08 v2.04 operator names
+  amsthm.sty    2020/05/29 v2.20.6
+beamerbasethemes.sty    
+beamerthemedefault.sty    
+beamerfontthemedefault.sty    
+beamercolorthemedefault.sty    
+beamerinnerthemedefault.sty    
+beamerouterthemedefault.sty    
+catchfile.sty    2019/12/09 v1.8 Catch the contents of a file (HO)
+etexcmds.sty    2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+"|kpsewhich -var-value=HOME".tex
+/Users/dantopa/GitHub//genesis//global//config//common//config-common-01.tex
+/Users/dantopa/GitHub//genesis//global//config//common//hyperlinks-global.tex
+/Users/dantopa/GitHub//genesis//global//config//common//listings-codes.tex
+listings.sty    2024/09/23 1.10c (Carsten Heinz)
+lstpatch.sty    2024/09/23 1.10c (Carsten Heinz)
+ lstmisc.sty    2024/09/23 1.10c (Carsten Heinz)
+listings.cfg    2024/09/23 1.10c listings configuration
+/Users/dantopa/GitHub//genesis//global//config//common//num-components.tex
+/Users/dantopa/GitHub//genesis//global//config//common//num-list.tex
+enumitem.sty    2019/06/20 v3.9 Customized lists
+/Users/dantopa/GitHub//genesis//global//config//common//paths-global-01.tex
+/Users/dantopa/GitHub//genesis//global//config//common//paths-local-01.tex
+/Users/dantopa/GitHub//genesis//global//config//common//paths-bitbucket.tex
+/Users/dantopa/GitHub//genesis//global//config//common//packages-common.tex
+mathtools.sty    2024/10/04 v1.31 mathematical typesetting tools
+    calc.sty    2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+ mhsetup.sty    2021/03/18 v1.4 programming setup (MH)
+ fontenc.sty    2021/04/29 v2.0v Standard LaTeX package
+ lmodern.sty    2015/05/01 v1.6.1 Latin Modern Fonts
+colortbl.sty    2024/07/06 v1.0i Color table columns (DPC)
+   array.sty    2024/10/17 v2.6g Tabular extension package (FMi)
+multirow.sty    2024/11/12 v2.9 Span multiple rows of a table
+multicol.sty    2024/09/14 v1.9i multicolumn formatting (FMi)
+booktabs.sty    2020/01/12 v1.61803398 Publication quality tables
+ overpic.sty    2024/01/06 2.1 picture overlays (RN)
+    epic.sty    
+    tikz.sty    2023-01-15 v3.1.10 (3.1.10)
+     pgf.sty    2023-01-15 v3.1.10 (3.1.10)
+pgfcomp-version-0-65.sty    2023-01-15 v3.1.10 (3.1.10)
+pgfcomp-version-1-18.sty    2023-01-15 v3.1.10 (3.1.10)
+  pgffor.sty    2023-01-15 v3.1.10 (3.1.10)
+pgffor.code.tex
+tikz.code.tex
+pdfpages.sty    2024/10/28 v0.6c Insert pages of external PDF documents (AM)
+  ifthen.sty    2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+ eso-pic.sty    2023/05/03 v3.0c eso-pic (RN)
+pppdftex.def    2024/10/28 v0.6c Pdfpages driver for pdfTeX (AM)
+/Users/dantopa/GitHub//genesis//global//config//pres//config-type.tex
+/Users/dantopa/GitHub//genesis//global//config//pres//aesthetics.tex
+beamerthemeCopenhagen.sty    
+beamerouterthemesplit.sty    
+beamerinnerthemerounded.sty    
+beamercolorthemewhale.sty    
+beamercolorthemeorchid.sty    
+beamercolorthemebeaver.sty    
+beamerfontthemestructurebold.sty    
+beamerfontthemeserif.sty    
+/Users/dantopa/GitHub//genesis//global//config//pres//jumps.tex
+/Users/dantopa/GitHub//genesis//global//config//pres//packages-type.tex
+ textpos.sty    2022/07/23 v1.10.1
+/Users/dantopa/GitHub//genesis//global//config//pres//theorems-type-01.tex
+/Users/dantopa/GitHub//genesis//pres/delete/config//config-local.tex
+/Users/dantopa/GitHub//genesis//global//config//common//href-hidden.tex
+/Users/dantopa/GitHub//genesis//global//config//common//bib-config-a.tex
+biblatex.sty    2024/03/21 v3.20 programmable bibliographies (PK/MW)
+  logreq.sty    2010/08/04 v1.0 xml request logger
+  logreq.def    2010/08/04 v1.0 logreq spec v1.0
+  blx-dm.def    2024/03/21 v3.20 biblatex datamodel (PK/MW)
+blx-compat.def    2024/03/21 v3.20 biblatex compatibility (PK/MW)
+biblatex.def    2024/03/21 v3.20 biblatex compatibility (PK/MW)
+standard.bbx    2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+ numeric.bbx    2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+ numeric.cbx    2024/03/21 v3.20 biblatex citation style (PK/MW)
+biblatex.cfg    
+   expl3.sty    2024-11-02 L3 programming layer (loader) 
+l3backend-pdftex.def    2024-05-08 L3 backend support: PDF output (pdfTeX)
+blx-case-expl3.sty    2024/03/21 v3.20 expl3 case changing code for biblatex
+  xparse.sty    2024-08-16 L3 Experimental document command parser
+  t1lmss.fd    2015/05/01 v1.6.1 Font defs for Latin Modern
+supp-pdf.mkii
+epstopdf-base.sty    2020-01-24 v2.11 Base part for package epstopdf
+epstopdf-sys.cfg    2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+main-delete.out
+main-delete.out
+translator-basic-dictionary-English.dict    
+translator-bibliography-dictionary-English.dict    
+translator-environment-dictionary-English.dict    
+translator-months-dictionary-English.dict    
+translator-numbers-dictionary-English.dict    
+translator-theorem-dictionary-English.dict    
+pdflscape.sty    2022-10-27 v0.13 Display of landscape pages in PDF
+pdflscape-nometadata.sty    2022-10-28 v0.13 Display of landscape pages in PDF 
+(HO)
+  lscape.sty    2020/05/28 v3.02 Landscape Pages (DPC)
+ english.lbx    2024/03/21 v3.20 biblatex localization (PK/MW)
+main-delete.bbl
+/Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png
+/Users/dantopa/GitHub//genesis//pres/delete/sections//sec-intro.tex
+/Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png
+/Users/dantopa/GitHub//genesis//pres/delete/sections//sec-backup.tex
+/Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/afrl-logo.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/af-01.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/sf-best.png
+/Users/dantopa/GitHub//genesis//global//graphics/logos/hii-01.png
+ ***********
+
+Package rerunfilecheck Info: File `main-delete.out' has not changed.
+(rerunfilecheck)             Checksum: C7E650FFFE4D452C0E274124A92023A1;462.
+Package logreq Info: Writing requests to 'main-delete.run.xml'.
+\openout1 = `main-delete.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 37656 strings out of 473330
+ 759379 string characters out of 5719762
+ 1555515 words of memory out of 5000000
+ 60051 multiletter control sequences out of 15000+600000
+ 573287 words of font info for 44 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 128i,19n,123p,700b,904s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on main-delete.pdf (6 pages, 414050 bytes).
+PDF statistics:
+ 321 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+

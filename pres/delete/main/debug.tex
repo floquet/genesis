@@ -1,0 +1,29 @@
+\documentclass{beamer}
+
+% Use AMS-like theorem style
+\setbeamertemplate{theorem}[ams style]
+
+% Redefine theorem environment
+\renewcommand{\thetheorem}{\arabic{theorem}} % Example: Use global numbering
+\renewcommand{\thelemma}{\alph{lemma}}       % Example: Use alphabetical numbering for lemmas
+
+%\newtheorem{theorem}{Theorem}                % Define the theorem environment
+%\newtheorem{lemma}[theorem]{Lemma}           % Lemmas share numbering with theorems
+
+\begin{document}
+
+\begin{frame}
+    \frametitle{Example Theorem}
+    \begin{theorem}
+        This is a globally numbered theorem.
+    \end{theorem}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Example Lemma}
+    \begin{lemma}
+        This is a lemma, numbered alphabetically.
+    \end{lemma}
+\end{frame}
+
+\end{document}
