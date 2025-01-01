@@ -340,6 +340,7 @@ LOCAL_CONFIG_FILE="$PROJECT_DIR/config/config-local.tex"
 new_step "Seed local configuration file $LOCAL_CONFIG_FILE"
 cat << 'EOF' > "$LOCAL_CONFIG_FILE"
 % \input{\pLocalConfig/"config-local.tex"}
+\typeout{  >>  >>  >>  >>  >>  \pConfig/"config-local.tex"}
 
 % ===========================================================
 % Customize workspace environment beyond generic

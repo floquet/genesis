@@ -347,6 +347,7 @@ LOCAL_CONFIG_FILE="$DOCUMENT_DIR/config/config-local.tex"
 new_step "Seed $LOCAL_CONFIG_FILE"
 cat << 'EOF' > "$LOCAL_CONFIG_FILE"
 % \input{\pLocalConfig/"config-local.tex"}
+\typeout{  >>  >>  >>  >>  >>  \pConfig/"config-local.tex"}
 
 % ===========================================================
 % Customize workspace environment beyond generic

@@ -1,0 +1,324 @@
+% \input{\pathsections "sec serber"}
+
+\section{Liquid Drop Model: Spherical}
+% https://tex.stackexchange.com/questions/240243/getting-gif-and-or-moving-images-into-a-latex-presentation
+%\begin{frame}\frametitle{Ansatz: Nucleus Behaves as Liquid Drop}
+%% By A7N8X - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48828510
+%	\center
+%	\animategraphics[loop,controls,width=4cm]{10}{\pLocalGraphics animation/drop-}{0}{81}
+%	%\includegraphics{\pLocalGraphics drop.gif}
+%\end{frame}
+
+% https://tex.stackexchange.com/questions/240243/getting-gif-and-or-moving-images-into-a-latex-presentation
+%\begin{frame}\frametitle{Ansatz: Nucleus Behaves as Liquid Drop}
+%        \transduration<0-81>{0}
+%        \multiinclude[<+->][format=png, graphics={width=\textwidth}]{\pLocalGraphics animation/drop}
+%\end{frame}
+
+
+%%%   %%%   %%%   %%%
+\subsection{Serber's First Principles}
+%
+\begin{frame}\frametitle{Summary of Liquid Drop Model}
+\begin{enumerate}
+	\item Nucleus is liquid drop of \bl{constant radius}
+	\item Fluid is incompressible
+	\item Volume is conserved \cite{hofstadter1956atomic}
+\end{enumerate}
+\end{frame}
+%
+\begin{frame}\frametitle{Serber's Ingredients}
+\center
+	\href{https://www.ucpress.edu/book/9780520344174/the-los-alamos-primer}{
+	\begin{overpic}[ scale = 1.15 ]
+	{\pLocalGraphics primer-02}
+		%\put(-7,-10){Compute the temperature of the bar as a function of position.}
+	\end{overpic}}
+\center
+...based on a set of five lectures given by R. Serber during the first two weeks of April 1943, as an \href{https://upload.wikimedia.org/wikipedia/commons/9/9c/Los_Alamos_Primer.pdf}{\bl{``indoctrination course''}} in connection with the \bl{starting of the \href{https://www.nps.gov/articles/000/manhattan-project-science-at-los-alamos.htm}{Los Alamos Project}}. 
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Serber's Ingredients}
+\begin{enumerate}
+	\item \href{https://mathworld.wolfram.com/Sphere.html}{Volume of Sphere}
+	\item \href{https://www.feynmanlectures.caltech.edu/II_08.html}{High School Electrostatics}
+\end{enumerate}
+\end{frame}
+%
+
+%\setbeamercolor{background canvas}{bg=black}
+%\begin{frame}\frametitle{Reaction Model: Charge Bisection}
+%\center
+%	\begin{overpic}[ scale = 0.5 ]
+%	{\pLocalGraphics fission-3d-01}
+%		%\put(-7,-10){Compute the temperature of the bar as a function of position.}
+%	\end{overpic}
+%\end{frame}
+
+\setbeamercolor{background canvas}{bg=transparent}
+\setbeamercolor{background canvas}{bg=white}
+\begin{frame}\frametitle{Reaction Model: Charge Bisection}
+\center
+	U$_{92}$ $\to$ Nb$_{41}$ $+$ Nb$_{41}$
+\end{frame}
+
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}\frametitle{Reaction Model: Charge Bisection}
+\center
+{\color{black}{Before}} \qquad \qquad {\color{black}{After}}\\
+	\begin{overpic}[ scale = 0.425 ]
+	{\pLocalGraphics fission-3d-01}
+		\put(21,43){$Z=92$}
+		\put(65,60){$Z=41$}
+		\put(64,26){$Z=41$}
+	\end{overpic}
+\end{frame}
+
+%\setbeamercolor{background canvas}{bg=black}
+%\begin{frame}\frametitle{Quantify Change In Electrostatic Energy}
+%\center
+%	\begin{overpic}[ scale = 0.5 ]
+%	{\pLocalGraphics fission-3d-01}
+%		\put(27,43){$E_{0}$}
+%		\put(69,61){$E_{1}$}
+%		\put(69,26){$E_{1}$}
+%	\end{overpic}
+% \end{frame}
+%\setbeamercolor{background canvas}{bg=white}
+
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}\frametitle{Quantify Change In \href{https://www.macmillanlearning.com/studentresources/college/physics/tiplermodernphysics6e/classial_concept_review/chapter_11_ccr_20_electrostatic_energy_of_a_sphere_of_charge.pdf}{Electrostatic Energy}\jumpLittle}
+\center
+{\color{white}{Before}} \qquad \qquad {\color{white}{After}}\\
+	\begin{overpic}[ scale = 0.425 ]
+	{\pLocalGraphics fission-3d-01}
+		\put(27,43){$E_{0}$}
+		\put(69,61){$E_{1}$}
+		\put(69,26){$E_{1}$}
+	\end{overpic}
+ \end{frame}
+\setbeamercolor{background canvas}{bg=white}
+%
+\subsection{Computation}
+\begin{frame}\frametitle{\electrostatic: Before and After}
+	%
+\center
+Compute \href{http://www.atmo.arizona.edu/students/courselinks/spring13/atmo589/ATMO489_online/lecture_10/potential_energy/charged_sphere_pot_energy.html}{\bl{electrostatic energy}} for both configurations.
+	%
+\end{frame}
+
+\begin{frame}\frametitle{\electrostatic\ For Sphere of Charge $Z$}
+\center
+\bl{\electrostatic} For Sphere of Charge $Z$: \\[20pt]
+\href{https://physics.stackexchange.com/questions/538094/self-energy-of-a-uniformly-charged-non-conducting-sphere-using-energy-density}{
+\begin{equation}
+	E = \frac{Z^{2}}{R}
+%\label{eq:}
+\end{equation}}
+\end{frame}
+
+
+\begin{frame}\frametitle{\electrostatic: Before and After}
+\begin{table}[htp]
+%\caption{default}
+	\begin{center}
+	\begin{tabular}{ccc}
+		Before & \qquad & After \\\hline
+		\ \\
+		$\bl{E_{0}} = \displaystyle\frac{92^{2}}{\bl{R_{0}}}$ &&
+		$\bl{E_{1}} = 2 \times \displaystyle\frac{41^{2}}{\bl{R_{1}}}$ \\
+	\end{tabular}
+	\end{center}
+\label{tab:electrostatic energy}
+\end{table}%
+\end{frame}
+
+\begin{frame}\frametitle{\electrostatic: Before and After}
+\begin{table}[htp]
+%\caption{default}
+	\begin{center}
+	\begin{tabular}{ccc}
+		Before & \qquad & After \\\hline
+		\ \\
+		$\bl{E_{0}} = \displaystyle\frac{92^{2}}{\bl{R_{0}}}$ &&
+		$\bl{E_{1}} = 2 \times \displaystyle\frac{41^{2}}{\bl{R_{1}}}$ \\
+		\includegraphics[ width = 1in ]{\pLocalGraphics fission-3d-before} &&
+		\includegraphics[ width = 1in ]{\pLocalGraphics fission-3d-after}
+	\end{tabular}
+	\end{center}
+\label{tab:electrostatic energy II}
+\end{table}%
+\end{frame}
+
+\begin{frame}\frametitle{Change in Radius}
+	%
+\center
+How does \bl{$R_{1}$} compare to \bl{$R_{0}$}? \\[10pt]
+\pause
+Use \rd{Conservation of Nuclear Fluid}.
+	%
+\end{frame}
+
+\begin{frame}\frametitle{Nuclear Fluid (Volume) is Conserved}
+\begin{table}[htp]
+%\caption{default}
+	\begin{center}
+	\begin{tabular}{ccc}
+		Before & \qquad & After \\\hline
+		\ \\
+		$\bl{E_{0}} = \displaystyle\frac{92^{2}}{\bl{R_{0}}}$ &&
+		$\bl{E_{1}} = 2 \times \displaystyle\frac{41^{2}}{\bl{R_{1}}}$ \\[15pt]
+		$V_{0} = \frac{4}{3}\pi R_{0}^{3}$ && $V_{1} = 2\times\frac{4}{3}\pi R_{1}^{3}$ \\[5pt]
+		\includegraphics[ width = 1in ]{\pLocalGraphics fission-3d-before} &&
+		\includegraphics[ width = 1in ]{\pLocalGraphics fission-3d-after} \\
+	\end{tabular}
+	\end{center}
+\end{table}%
+\end{frame}
+
+\begin{frame}\frametitle{Solve for Radius $R_{1}$}
+	%
+	$$V_{0} = V_{1} \quad \Rightarrow \quad R_{0}^{3} = 2R_{1}^{3}$$
+	%
+\end{frame}
+
+\begin{frame}\frametitle{Solve for Radius $R_{1}$}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+\begin{tabular}{ccc}
+	$V_{0} = V_{1}$  & $\Rightarrow$ & $\cancel{\tfrac{4}{3} \pi} \bl{R_{0}^{3}} = \bl{2}\cdot \cancel{\tfrac{4}{3} \pi} \bl{R_{1}^{3}}$ \\[5pt]
+			&& $\Downarrow$ \\[5pt]
+			&& $R_{0}^{3} = 2R_{1}^{3}$ \\[5pt]
+			&& $\Downarrow$ \\[5pt]
+			&& $R_{1} = \bl{2^{-\tfrac{1}{3}}}R_{0}$ \\[5pt]
+			&& $\Downarrow$ \\[5pt]
+			&& $R_{1} \approx \bl{\tfrac{4}{5}}R_{0}$
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Change in Electrostatic Energy}
+\begin{equation}
+		%
+	\bl{\Delta E} = E_{0} - 2E_{1} = \mg{\frac{92^{2}}{R_{0}} - 2 \frac{41^{2}}{R_{1}}} = \bl{\frac{3}{8}E_{0}}
+		%
+\label{eq:delta E}
+\end{equation}
+\end{frame}
+
+\begin{frame}\frametitle{Change in Electrostatic Energy}
+\begin{equation}
+		%
+	\bl{\Delta E} = \bl{\frac{3}{8}E_{0}} \qquad \raisebox{-1cm}{\includegraphics[ width = 1 in ]{\pLocalGraphics emoji/surprise-03.jpeg}}
+		%
+\tag{\ref{eq:delta E}}
+\end{equation}
+\end{frame}
+
+\begin{frame}\frametitle{Change in Electrostatic Energy: Algebra Details}
+\begin{equation}
+	\begin{split}
+		\bl{\Delta E} &= E_{0} - 2E_{1} \\
+			&= \mg{\frac{92^{2}}{R_{0}} - 2 \cdot \frac{41^{2}}{R_{1}}} \\
+			&= \mg{\frac{(2\cdot 41)^{2}}{R_{0}} - \frac{2 \times 41^{2}}{\tfrac{4}{5}R_{0}}} \\
+			&= \mg{\frac{4\cdot 41^{2} - 5/2 \cdot 41^{2} }{R_{0}}} \\
+			&= \mg{\frac{3}{2} \frac{41^{2}}{R_{0}}} \\
+			&= \bl{\frac{3}{8}E_{0}}
+	\end{split}
+%\label{eq:}
+\end{equation}
+\end{frame}
+%
+\begin{frame}\frametitle{Serber's Ingredients and Result\jumpLittle}
+\begin{enumerate}
+	\item \href{https://en.wikipedia.org/wiki/Sphere}{\mg{Volume of Sphere}}
+	\item \href{https://www.cliffsnotes.com/study-guides/physics/electricity-and-magnetism/electrostatics}{\mg{High School Electrostatics}}
+\end{enumerate}
+\ \\[10pt]
+\center
+Result: \bl{Fission} Releases \bl{Astonishing Energy} 
+\begin{equation}
+		%
+	\bl{\Delta E} = \bl{\frac{3}{8}E_{0}} 
+		%
+\tag{\ref{eq:delta E}}
+\end{equation}
+\end{frame}
+%
+%\begin{frame}\frametitle{Fission Releases Astonishing Energy}
+%\center
+%Over a \bl{third} of the \bl{electrostatic energy} becomes \bl{kinetic energy}!
+%\end{frame}
+%%
+%%
+%\begin{frame}\frametitle{Fission Releases Astonishing Energy}
+%\center
+%Over a \bl{third} of the \bl{electrostatic energy} becomes \bl{kinetic energy}!
+%\pause
+%If TNT = \$1, U fusion is a stack of dollar bills of $6\tfrac{3}{4}$ miles high.
+%\end{frame}
+
+
+%%%   %%%   %%%   %%%
+%\subsection{Rudiments}
+
+%%%   %%%   %%%   %%%
+%\subsection{Serber Example}
+%
+%%%   %%%   %%%   %%%
+\subsection{Fission Energy Release}
+\begin{frame}\frametitle{Astonishing Energy Release}
+\center
+	If \href{https://en.wikipedia.org/wiki/TNT}{TNT} gives you \$1 \href{http://chemsite.lsrhs.net/Nuclear/chemNucDifference.html}{per reaction}, how much will $^{235}$U provide? \\[20pt]
+	\pause
+	A stack of dollar bills 7,160 ft tall.\\[20pt]
+	\pause
+	\bl{1.4 miles high.}
+\end{frame}
+
+\begin{frame}\frametitle{Astonishing Energy Release}
+\center
+	\includegraphics[ scale = 0.8 ]{\pLocalGraphics singles}
+\end{frame}
+
+\begin{frame}\frametitle{Hiroshima\jumpLittle}
+\center
+	Amount of $^{235}$U fissioned \bl{$< 1.5$ cubic inches}
+	\includegraphics[ scale = 0.3 ]{\pLocalGraphics cube}
+\end{frame}
+
+%
+%%%   %%%   %%%   %%%
+\subsection{References}
+\begin{frame}\frametitle{Internet References: Liquid Drop Model\jumpLittle}
+\begin{itemize}
+	\item nuclear-power.com: \href{https://www.nuclear-power.com/nuclear-power/fission/liquid-drop-model/}{\mg{Liquid Drop Model of Nucleus}}
+	\item University of Saskatchewan: \href{http://nucleus.usask.ca/ftp/pub/rob/PHYS-452-Topics/Part-04\%20Liquid\%20Drop\%20Model.pdf}{\mg{Liquid Drop Model}}
+	\item Colorado School of Mines: \href{http://inside.mines.edu/~kleach/PHGN422/lectures/Lecture5.pdf}{\mg{The Liquid Drop Model of the Nucleus}}
+	\item Wikipedia: \href{https://en.wikipedia.org/wiki/Semi-empirical\_mass\_formula}{\mg{Semi-empirical mass formula}}
+	\item University of Southampton: \href{http://www.personal.soton.ac.uk/ab1u06/teaching/phys3002/course/04\_liquiddrop.pdf}{\mg{The Liquid Drop Model}}
+	\item Vendatu: \href{https://www.vedantu.com/physics/liquid-drop-model}{\mg{Liquid Drop Model in Nuclear Physics}}
+	\item hyperphysics: \href{http://hyperphysics.gsu.edu/hbase/Nuclear/liqdrop.html}{\mg{Liquid Drop Model of Nucleus}}
+\end{itemize}
+\end{frame}
+
+%%%   %%%   %%%   %%%
+\subsection{Next Step}
+%
+\begin{frame}\frametitle{Next Step: Variable $R$\jumpBig}
+	%
+Serber's argument used a constant radius: $R=\,$\bl{const}\\
+%
+Bohr and Wheeler let the radius vary $R=\bl{R(\theta)}$
+	%
+\end{frame}
+
+
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

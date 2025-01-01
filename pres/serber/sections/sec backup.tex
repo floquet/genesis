@@ -1,0 +1,301 @@
+% \input{\pSections "sec backup"}
+
+\section{Backup}
+
+%%%   %%%   %%%   %%%
+\subsection{Legendre Polynomials: Multipole Expansion}
+\begin{frame}\frametitle{Birth of the \legendremathworld}
+``In the study of the attraction of spheroids and \bl{planetary motions}''(\cite[ch. 3, p. 169]{sansone1959orthogonal})\\
+%
+\begin{equation}
+	\frac{1}{r} = \paren{1 - 2\rho \cos \gamma + \rho^{2}}^{-\tfrac{1}{2}}
+\label{eq:leg-start}
+\end{equation}
+\pause
+Think: \LawOfCosinesMathworld \rd{\ Again}
+\end{frame}
+
+\begin{frame}\frametitle{\binomialSeriesMathworld}
+For $\abs{\rho} < 1$
+\begin{equation}
+	\begin{split}
+		\frac{1}{r} &= \paren{1 - \rho e^{i\gamma}}^{-\tfrac{1}{2}} \paren{1 - \rho e^{-i\gamma}}^{\rd{-}\tfrac{1}{2}} \\
+			&= \sum_{n=0}^{\infty}\paren{-1}^{n} \binom{-\tfrac{1}{2}}{n} \rho^{n} e^{iny}
+	\end{split}
+\label{eq:expand 1/r}
+\end{equation}
+\end{frame}
+
+\begin{frame}\frametitle{Using the \ \binomialSeriesMathworld}
+For $\abs{\rho} < 1$
+\begin{equation}
+\begin{array}{cccc}
+		\displaystyle\frac{1}{r} &=& \paren{1 - \rho e^{i\gamma}}^{-\tfrac{1}{2}} & \paren{1 - \rho e^{-i\gamma}}^{\rd{-}\tfrac{1}{2}} \\[10pt]
+			&=& \displaystyle\sum_{n=0}^{\infty}\paren{-1}^{n} \binom{-\tfrac{1}{2}}{n} \rho^{n} e^{in\gamma}
+			& \displaystyle\sum_{n=0}^{\infty}\paren{-1}^{n} \binom{-\tfrac{1}{2}}{n} \rho^{n} e^{\rd{-}in\gamma}
+\end{array}
+\label{eq:expand 1/r}
+\end{equation}
+\end{frame}
+
+%
+\begin{frame}\frametitle{Using the \cauchyProductMathworld}
+
+\begin{center}
+	Multiplication of two absolutely convergent series \\
+	when $n>0$
+\end{center}
+	%
+\begin{equation*}
+	\paren{f \circ g}(n) = \sum_{k=0}^{n} f(n)g(n-k)
+%\label{eq:}
+\end{equation*}
+\end{frame}
+
+\begin{frame}\frametitle{Using the \cauchyProductWikipedia}
+\begin{equation*}
+\begin{split}
+			%
+		\displaystyle\frac{1}{r} &= \displaystyle\sum_{n=0}^{\infty} \rho^{n} \displaystyle\sum_{j=0}^{\brac{n/2}} 
+			\binom{-\tfrac{1}{2}}{j} \binom{-\tfrac{1}{2}}{n-j} \times \\
+			& \paren{
+				\paren{-1}^{j} \paren{-1}^{n-j} e^{ij\gamma}e^{\rd{-}i(n-j)\gamma}
+				+ \paren{-1}^{j} \paren{-1}^{n-j} e^{\rd{-}ij\gamma}e^{i(n-j)\gamma}
+			}
+			%
+\end{split}
+\end{equation*}
+\end{frame}
+
+%
+\begin{frame}\frametitle{Introducing the \legendremathworld!\jumpLittle}
+	%
+\begin{equation}
+		%
+	\frac{1}{r} = \paren{1 - 2\rho \cos \gamma + \rho^{2}}^{-\tfrac{1}{2}} = \displaystyle\sum_{n=0}^{\infty} \rho^{n} \bl{P_{n}}\paren{\cos \gamma}
+		%
+\tag{\ref{eq:leg-start}}
+\end{equation}
+\pause
+\begin{equation*}
+\begin{split}
+		%
+	&\bl{P_{n}}\paren{\cos \gamma} \\
+		&= \paren{-1}^{n} \paren{\binom{-\tfrac{1}{2}}{n} 2 \cos n \gamma + \binom{-\tfrac{1}{2}}{n-1} \binom{-\tfrac{1}{2}}{1}  2 \cos (n-2) \gamma + \dots}
+		%
+\end{split}
+%\label{eq:}
+\end{equation*}
+\end{frame}
+%
+
+
+
+%%%   %%%   %%%   %%%
+\subsection{Legendre Polynomials: Bonnet Recursion}
+\begin{frame}\frametitle{Deriving Bonnet's Recursion Formula}
+Start with the \href{https://en.wikipedia.org/wiki/Legendre\_polynomials\#Definition\_via\_generating\_function}{\bl{generating function}}
+\begin{equation}
+	\frac{1}{\sqrt{1 - 2xt + t^{2}}} = \displaystyle\sum_{k=0}^{\infty}{\legendreTermA}
+\label{eq:legendre-generating functions}
+\end{equation}
+\bl{Differentiate}  w.r.t.:
+\begin{equation}
+	\begin{array}{ccc}
+		\partial_{t} \displaystyle\paren{\frac{1}{\sqrt{1 - 2xt + t^{2}}}} &=& \partial_{t} \paren{ \displaystyle\sum_{k=0}^{\infty}{\legendreTermA} } \\[15pt]
+		\displaystyle\frac{x-t}{\paren{\legendreTerm}^{3/2}}  &=& \displaystyle\sum_{k=1}^{\infty}{\legendreTermB} \\
+	\end{array}
+%\label{eq:name}
+\end{equation}
+\end{frame}
+
+\begin{frame}\frametitle{Continuing...}
+Multiply both sides by the polynomial term...
+\begin{equation}
+	\begin{array}{rcl}
+		\displaystyle\frac{x-t}{\paren{\legendreTerm}^{\rd{3/2}}}  &=& \displaystyle\sum_{k=1}^{\infty}{\legendreTermB} \\
+		\pause
+		\displaystyle\frac{\mg{x-t}}{\sqrt{\legendreTerm}} &=& \paren{1 - 2xt + t^{2}}\mg{\displaystyle\sum_{k=1}^{\infty}{\legendreTermB}} \\[15pt]
+	\end{array}
+%\label{eq:name}
+\end{equation}
+%
+\pause
+Substitute using equation \eqref{eq:legendre-generating functions}
+\begin{equation}
+	\begin{array}{rcl}
+		\displaystyle\paren{x-t}\bl{\sum_{k=0}^{\infty}\legendreTermA} &=& \paren{1 - 2xt + t^{2}}\displaystyle\sum_{k=1}^{\infty}{\legendreTermB}
+	\end{array}
+\label{eq:form-a}
+\end{equation}
+\end{frame}
+
+%\begin{frame}\frametitle{Collect Powers of $t$}
+%\begin{equation}
+%	\begin{array}{rcl}
+%		%
+%	\displaystyle\paren{x-t}\sum_{k=0}^{\infty}\legendreTermA &=& \paren{1 - 2xt + t^{2}}\displaystyle\sum_{k=1}^{\infty}{\legendreTermB}\\[10pt]
+%		%
+%%	\displaystyle\sum_{k=0}^{\infty}{xP_{k}(x)t^{k}} &=&
+%%		\paren{2xt - 1} \displaystyle\sum_{k=1}^{\infty}{\legendreTermB} +\displaystyle\paren{x-t}\sum_{k=0}^{\infty}\legendreTermA \\[10pt]
+%%		%
+%%	t^{2}\displaystyle\sum_{k=1}^{\infty}{\legendreTermB} &=&
+%%		2x \displaystyle\sum_{k=1}^{\infty}{\legendreTermC} +\displaystyle\paren{x-t}\sum_{k=0}^{\infty}\legendreTermA - \displaystyle\sum_{k=1}^{\infty}{\legendreTermB}
+%		%
+%	\end{array}
+%\end{equation}	
+%%
+%\begin{equation}
+%	%\begin{split}
+%	\displaystyle\sum_{k=0}^{\infty}{xP_{k}(x)t^{k}} - \sum_{k=0}^{\infty}{P_{k}(x)t^{k+1}} 
+%		= \sum_{k=0}^{\infty}{k P_{k}(x)t^{k-1}}
+%		- \sum_{k=0}^{\infty}{2x P_{k}(x)t^{k}}
+%		+ \sum_{k=0}^{\infty}{k P_{k}(x)t^{k+1}}
+%	%\end{split}
+%%\label{eq:name}
+%\end{equation}
+%
+%\end{frame}%
+
+\begin{frame}\frametitle{Distribute Powers of $t$}
+\begin{equation}
+	\begin{array}{rcl}
+		\displaystyle\paren{x-t}\sum_{k=0}^{\infty}\legendreTermA &=& \paren{1 - 2xt + t^{2}}\displaystyle\sum_{k=1}^{\infty}{\legendreTermB}
+	\end{array}
+\tag{\ref{eq:form-a}}
+\end{equation}
+Distribute powers of $t$
+\pause
+\begin{equation}
+	\begin{array}{ccccc c}
+			%
+		\displaystyle\sum_{k=0}^{\infty}{xP_{k}(x)t^{\bl{k}}} 
+			&-&
+		\displaystyle\sum_{k=0}^{\infty}{P_{k}(x)t^{\rd{k+1}}} 
+			&=& \\[15pt]
+		\displaystyle\sum_{k=0}^{\infty}{k P_{k}(x)t^{k-1}}
+			&-&
+		\displaystyle\sum_{k=0}^{\infty}{2kx P_{k}(x)t^{\bl{k}}}
+			&+&
+		\displaystyle\sum_{k=0}^{\infty}{k P_{k}(x)t^{\rd{k+1}}}
+			%
+	\end{array}
+\label{eq:same-damn-thing}
+\end{equation}	
+\end{frame}
+
+%\begin{frame}\frametitle{Collect Powers of $t$}
+%\begin{equation}
+%	\begin{array}{ccccc c}
+%			%
+%		\displaystyle\sum_{k=0}^{\infty}{xP_{k}(x)t^{\bl{k}}} 
+%			&-&
+%		\displaystyle\sum_{k=0}^{\infty}{P_{k}(x)t^{\rd{k+1}}} 
+%			&=& \\[15pt]
+%		\displaystyle\sum_{k=0}^{\infty}{k P_{k}(x)t^{k-1}}
+%			&-&
+%		\displaystyle\sum_{k=0}^{\infty}{2kx P_{k}(x)t^{\bl{k}}}
+%			&+&
+%		\displaystyle\sum_{k=0}^{\infty}{k P_{k}(x)t^{\rd{k+1}}}
+%			%
+%	\end{array}
+%%\label{eq:name}
+%\end{equation}	
+%\pause
+%\begin{equation}
+%	\legendreBonnetK
+%\end{equation}	
+%\end{frame}
+
+\begin{frame}\frametitle{Collect Powers of $t$}
+\begin{equation}
+	\begin{array}{ccccc c}
+			%
+		\displaystyle\sum_{k=0}^{\infty}{xP_{k}(x)t^{\bl{k}}} 
+			&-&
+		\displaystyle\sum_{k=0}^{\infty}{P_{k}(x)t^{\rd{k+1}}} 
+			&=& \\[15pt]
+		\displaystyle\sum_{k=0}^{\infty}{k P_{k}(x)t^{k-1}}
+			&-&
+		\displaystyle\sum_{k=0}^{\infty}{2x P_{k}(x)t^{\bl{k}}}
+			&+&
+		\displaystyle\sum_{k=0}^{\infty}{k P_{k}(x)t^{\rd{k+1}}}
+			%
+	\end{array}
+\tag{\ref{eq:same-damn-thing}}
+\end{equation}	
+Rearrangement..
+\begin{equation}
+	\begin{array}{ccccc c}
+			%
+		\displaystyle\sum_{k=0}^{\infty}{k P_{k}(x)t^{\rd{k+1}}}
+			&+&
+		\displaystyle\sum_{k=0}^{\infty}{P_{k}(x)t^{\rd{k+1}}} 
+			&=& \\[15pt]
+		\displaystyle\sum_{k=0}^{\infty}{2kx P_{k}(x)t^{\bl{k}}}
+			&+&
+		\displaystyle\sum_{k=0}^{\infty}{kxP_{k}(x)t^{\bl{k}}} 
+			&-& 
+		\displaystyle\sum_{k=0}^{\infty}{k P_{k}(x)t^{k-1}}
+			%
+	\end{array}
+\tag{\ref{eq:same-damn-thing}}
+\end{equation}	
+\end{frame}
+
+\begin{frame}\frametitle{Collect Powers of $t$}
+\begin{equation}
+	\begin{array}{ccccc c}
+			%
+		\displaystyle\sum_{k=0}^{\infty}{k P_{k}(x)t^{\rd{k+1}}}
+			&+&
+		\displaystyle\sum_{k=0}^{\infty}{P_{k}(x)t^{\rd{k+1}}} 
+			&=& \\[15pt]
+		\displaystyle\sum_{k=0}^{\infty}{2kx P_{k}(x)t^{\bl{k}}}
+			&+&
+		\displaystyle\sum_{k=0}^{\infty}{kxP_{k}(x)t^{\bl{k}}} 
+			&-& 
+		\displaystyle\sum_{k=0}^{\infty}{k P_{k}(x)t^{k-1}}
+			%
+	\end{array}
+\tag{\ref{eq:same-damn-thing}}
+\end{equation}	
+Group powers of $t$
+\begin{equation}
+	\displaystyle\sum_{k=0}^{\infty}(k+1)P_{k}(x)t^{\rd{k+1}} 
+		= \displaystyle\sum_{k=0}^{\infty}(2k+1) x P_{k}(x)t^{\bl{k}} 
+		- \displaystyle\sum_{k=0}^{\infty}{k P_{k}(x)t^{k-1}}
+\label{eq:bonnet-almost}
+\end{equation}
+\end{frame}
+
+\begin{frame}\frametitle{When Are Series Equal?}
+\begin{definition}
+Two summable infinite series
+	$$ \sum_{k=0}^{\infty} a_{k} < \infty, \sum_{k=0}^{\infty} b_{k} < \infty$$
+	are equal iff they exhibit equality of the partial sums:
+\begin{equation*}
+	\sum_{k=0}^{n} a_{k} = \sum_{k=0}^{n} b_{k} \quad \forall n \ge 0
+%\label{eq:name}
+\end{equation*}
+\end{definition}
+The series are equal \bl{term by term}:
+$$ a_{k} =  b_{k} \quad k=0\colon \infty$$
+\end{frame}
+
+\begin{frame}\frametitle{Equate Coefficients Term by Term}
+``Eliminate'' the summations
+\begin{equation}
+	\displaystyle\sum_{k=0}^{\infty}(k+1)P_{k}(x)t^{\rd{k+1}} 
+		= \displaystyle\sum_{k=0}^{\infty}(2k+1) x P_{k}(x)t^{\bl{k}} 
+		- \displaystyle\sum_{k=0}^{\infty}{k P_{k}(x)t^{k-1}}
+\tag{\ref{eq:bonnet-almost}}
+\end{equation}
+Revealing \bl{Bonnet's Recursion Formula}
+\begin{equation}
+	\legendreBonnetK
+\end{equation}		
+\end{frame}
+
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

@@ -340,6 +340,7 @@ EOF
 new_step "Seed $PROJECT_DIR/config/config-local.tex"
 cat << 'EOF' > "$PROJECT_DIR/config/config-local.tex"
 % \input{\pLocalConfig/"config-local.tex"}
+\typeout{  >>  >>  >>  >>  >>  \pConfig/"config-local.tex"}
 
 % ===========================================================
 % Customize workspace environment beyond generic
