@@ -35,17 +35,18 @@
 \newcommand{\title} {serber}  		%% project title
 
 % enunciator enunciations
+\newcommand{\enunMain}  {  **  **  **  **  **  }
 \newcommand{\enunBase}  {  ==  ==  ==  ==  ==  }
 \newcommand{\enunLocal}  {  --  --  --  --  --  }
 \newcommand{\enunPres}  {  ++  ++  ++  ++  ++  }
-\newcommand{\enunDocsl}  {  @@  @@  @@  @@  @@  }
+\newcommand{\enunDocs}  {  @@  @@  @@  @@  @@  }
 
-\typeout{  **  **  **  **  **  Begin configuration sequence: BASE, TYPE, LOCAL}
-\typeout{  **  **  **  **  **  pGlobConfType = \pGlobConfType}
+\typeout{\enunMain  Begin configuration sequence: BASE, TYPE, LOCAL}
+\typeout{\enunMain  pGlobConfType = \pGlobConfType}
 
 % Configuration hierarchy: COMMON, TYPE ( doc, pres ), LOCAL
 \input{\pBaseCommon/"config-common.tex"}
-\input{\pLocalCommon/"config-type.tex"}
+\input{\pTypeCommon/"config-type.tex"}
 \input{\pLocalCommon/"config-local.tex"}
 
 % ===========================================================
