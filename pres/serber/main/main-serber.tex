@@ -19,23 +19,34 @@
 \makeatletter
 \edef\HomePath{\expandafter\zap@space\HomePath \@empty}
 \makeatother
-\newcommand{\type} {pres}
-\newcommand{\pGithub} {\HomePath/GitHub/}
-\newcommand{\pGenesis} {\pGithub/genesis/}
-\newcommand{\pType} {\pGenesis/\type/}
-\newcommand{\pProj} {\pGenesis/\type/serber}
-\newcommand{\pGlob} {\pGenesis/global/}
-\newcommand{\pGlobConf} {\pGlob/config/}
-\newcommand{\pGlobConfCom} {\pGlobConf/common/}
-\newcommand{\pGlobConfType} {\pGlobConf/\type/}
 
-\typeout{  **  **  **  **  **  Begin configuration sequence: Global, Pres, Local}
+% self-locate GitHub repo
+\newcommand{\pGithub} {\HomePath/GitHub/}
+\newcommand{\pRepo} {\pGithub/latex-2025/}
+
+% base files
+\newcommand{\pBase} {\pTrunk/\pRepo/base}
+\newcommand{\pBaseConf} {\pBase/config}
+\newcommand{\pBaseCommon} {\pBaseConf/common}
+
+% local navigation
+\newcommand{\type} {pres}  		%% doc, pres
+\newcommand{\flavor} {research}  	%% his, research
+\newcommand{\title} {serber}  		%% project title
+
+% enunciator enunciations
+\newcommand{\enunBase}  {  ==  ==  ==  ==  ==  }
+\newcommand{\enunLocal}  {  --  --  --  --  --  }
+\newcommand{\enunPres}  {  ++  ++  ++  ++  ++  }
+\newcommand{\enunDocsl}  {  @@  @@  @@  @@  @@  }
+
+\typeout{  **  **  **  **  **  Begin configuration sequence: BASE, TYPE, LOCAL}
 \typeout{  **  **  **  **  **  pGlobConfType = \pGlobConfType}
 
-% Load Global Setup Files
-\input{\pGlobConfCom/"config-common-01.tex"}
-\input{\pGlobConfType/"config-type.tex"}
-\input{\pConfig/"config-local.tex"}
+% Configuration hierarchy: COMMON, TYPE ( doc, pres ), LOCAL
+\input{\pBaseCommon/"config-common.tex"}
+\input{\pLocalCommon/"config-type.tex"}
+\input{\pLocalCommon/"config-local.tex"}
 
 % ===========================================================
 % Global and Local Resource Setup
