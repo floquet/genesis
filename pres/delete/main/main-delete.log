@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  31 DEC 2024 22:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  2 JAN 2025 22:05
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1168,8 +1168,10 @@ TextBlockOrigin set to 0pt x 0pt
 )) (/Users/dantopa/GitHub//genesis//global//config//pres//theorems-type-01.tex
  ++ ++ ++ ++ ++ /Users/dantopa/GitHub//genesis//global//config//pres//"theorems
 -type.tex"
-)) (/Users/dantopa/GitHub//genesis//pres/delete/config//config-local.tex)
-(/Users/dantopa/GitHub//genesis//global//config//common//href-hidden.tex
+)) (/Users/dantopa/GitHub//genesis//pres/delete/config//config-local.tex
+ >> >> >> >> >> /Users/dantopa/GitHub//genesis//pres/delete/config//"config-loc
+al.tex"
+) (/Users/dantopa/GitHub//genesis//global//config//common//href-hidden.tex
  == == == == == /Users/dantopa/GitHub//genesis//global//config//common//"href-h
 idden.tex"
 ) (/Users/dantopa/GitHub//genesis//global//config//common//bib-config-a.tex
@@ -2234,15 +2236,15 @@ Package logreq Info: Writing requests to 'main-delete.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37656 strings out of 473330
- 759379 string characters out of 5719762
- 1555515 words of memory out of 5000000
- 60051 multiletter control sequences out of 15000+600000
+ 37659 strings out of 473330
+ 759414 string characters out of 5719762
+ 1555585 words of memory out of 5000000
+ 60054 multiletter control sequences out of 15000+600000
  573287 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,123p,700b,904s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on main-delete.pdf (6 pages, 414050 bytes).
+Output written on main-delete.pdf (6 pages, 414173 bytes).
 PDF statistics:
  321 PDF objects out of 1000 (max. 8388607)
  241 compressed objects within 3 object streams
