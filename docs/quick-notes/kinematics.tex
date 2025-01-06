@@ -2,17 +2,19 @@
 \usepackage{amsmath, amssymb, geometry, tikz}
 \usetikzlibrary{calc}
 \geometry{a4paper, margin=1in}
+\usepackage[printwatermark]{xwatermark}
+	\newwatermark[allpages,color=red!5,angle=45,scale=3,xpos=0,ypos=0]{DRAFT}
 
 % Title Information
 \title{Kinematics of Satellite Collisions: Elastic Case}
-\author{Daniel T. \& Achates (ChatGPT)}
+\author{Daniel Topa\\HII Mission Tecnology\\Kirtland AFB, NM}%. \& Achates (ChatGPT)}
 \date{\today}
 
 \begin{document}
 
 \maketitle
-
 \begin{abstract}
+\tableofcontents
 This report explores the kinematics of satellite collisions, focusing on the elastic collision scenario. Conservation of momentum and kinetic energy is analyzed, laying the groundwork for understanding collision dynamics in orbital mechanics. Future work will include modeling the collision trace on the Earth's surface.
 \end{abstract}
 
@@ -27,37 +29,37 @@ An elastic collision is characterized by the conservation of both linear momentu
 \subsection{Conservation of Momentum}
 The law of conservation of linear momentum states:
 \begin{equation}
-    m_1 \vec{v}_{1i} + m_2 \vec{v}_{2i} = m_1 \vec{v}_{1f} + m_2 \vec{v}_{2f},
+    m_1 \mathbf{v}_{1i} + m_2 \mathbf{v}_{2i} = m_1 \mathbf{v}_{1f} + m_2 \mathbf{v}_{2f},
 \end{equation}
 where:
 \begin{itemize}
     \item $m_1, m_2$: masses of the two satellites,
-    \item $\vec{v}_{1i}, \vec{v}_{2i}$: initial velocities of the satellites,
-    \item $\vec{v}_{1f}, \vec{v}_{2f}$: final velocities of the satellites.
+    \item $\mathbf{v}_{1i}, \mathbf{v}_{2i}$: initial velocities of the satellites,
+    \item $\mathbf{v}_{1f}, \mathbf{v}_{2f}$: final velocities of the satellites.
 \end{itemize}
 
 \subsection{Conservation of Kinetic Energy}
 For elastic collisions, the total kinetic energy before and after the collision remains constant:
 \begin{equation}
-    \frac{1}{2} m_1 |\vec{v}_{1i}|^2 + \frac{1}{2} m_2 |\vec{v}_{2i}|^2 = \frac{1}{2} m_1 |\vec{v}_{1f}|^2 + \frac{1}{2} m_2 |\vec{v}_{2f}|^2.
+    \frac{1}{2} m_1 |\mathbf{v}_{1i}|^2 + \frac{1}{2} m_2 |\mathbf{v}_{2i}|^2 = \frac{1}{2} m_1 |\mathbf{v}_{1f}|^2 + \frac{1}{2} m_2 |\mathbf{v}_{2f}|^2.
 \end{equation}
 
 \section{Derivation of Final Velocities}
 Using the principles of momentum and energy conservation, the final velocities can be expressed as:
 \begin{align}
-    \vec{v}_{1f} &= \frac{(m_1 - m_2) \vec{v}_{1i} + 2 m_2 \vec{v}_{2i}}{m_1 + m_2}, \\
-    \vec{v}_{2f} &= \frac{(m_2 - m_1) \vec{v}_{2i} + 2 m_1 \vec{v}_{1i}}{m_1 + m_2}.
+    \mathbf{v}_{1f} &= \frac{(m_1 - m_2) \mathbf{v}_{1i} + 2 m_2 \mathbf{v}_{2i}}{m_1 + m_2}, \\
+    \mathbf{v}_{2f} &= \frac{(m_2 - m_1) \mathbf{v}_{2i} + 2 m_1 \mathbf{v}_{1i}}{m_1 + m_2}.
 \end{align}
 
 \section{Frames of Reference}
 
 \subsection{Inertial Frame vs. Center of Mass Frame}
 
-\paragraph{Inertial Frame.} In the inertial frame, the velocities $\vec{v}_{1}$ and $\vec{v}_{2}$ are defined relative to a fixed observer. While intuitive, solving elastic collisions in this frame can become algebraically intensive.
+\paragraph{Inertial Frame.} In the inertial frame, the velocities $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ are defined relative to a fixed observer. While intuitive, solving elastic collisions in this frame can become algebraically intensive.
 
 \paragraph{Center of Mass Frame.} The center of mass (CoM) frame simplifies calculations by transforming the velocities such that:
 \begin{equation}
-    \vec{v}_{\text{CoM}} = \frac{m_1 \vec{v}_{1i} + m_2 \vec{v}_{2i}}{m_1 + m_2}.
+    \mathbf{v}_{\text{CoM}} = \frac{m_1 \mathbf{v}_{1i} + m_2 \mathbf{v}_{2i}}{m_1 + m_2}.
 \end{equation}
 In this frame:
 \begin{itemize}
@@ -67,17 +69,17 @@ In this frame:
 
 \paragraph{Transformations.} Transforming to the CoM frame:
 \begin{equation}
-    \vec{v}_{i, \text{CoM}} = \vec{v}_{i} - \vec{v}_{\text{CoM}}.
+    \mathbf{v}_{i, \text{CoM}} = \mathbf{v}_{i} - \mathbf{v}_{\text{CoM}}.
 \end{equation}
 Transforming back to the inertial frame after solving:
 \begin{equation}
-    \vec{v}_{i}^{\prime} = \vec{v}_{i, \text{CoM}} + \vec{v}_{\text{CoM}}.
+    \mathbf{v}_{i}^{\prime} = \mathbf{v}_{i, \text{CoM}} + \mathbf{v}_{\text{CoM}}.
 \end{equation}
 
 \section{Collision Energy vs. Crossing Angle}
 The collision angle $\theta$ (the angle between the initial velocity vectors) determines the relative velocity and energy distribution. Using the law of cosines:
 \begin{equation}
-    |\vec{v}_{\text{rel}}|^2 = |\vec{v}_{1}|^2 + |\vec{v}_{2}|^2 - 2|\vec{v}_{1}||\vec{v}_{2}|\cos\theta.
+    |\mathbf{v}_{\text{rel}}|^2 = |\mathbf{v}_{1}|^2 + |\mathbf{v}_{2}|^2 - 2|\mathbf{v}_{1}||\mathbf{v}_{2}|\cos\theta.
 \end{equation}
 Special cases:
 \begin{itemize}
@@ -87,16 +89,16 @@ Special cases:
 \end{itemize}
 
 \subsection{Graph: Collision Energy vs. Crossing Angle}
-A plot of relative collision energy $|\vec{v}_{\text{rel}}|^2$ vs. crossing angle $\theta$ provides insights into the geometry of collisions. This visualization will be included in future work.
+A plot of relative collision energy $|\mathbf{v}_{\text{rel}}|^2$ vs. crossing angle $\theta$ provides insights into the geometry of collisions. This visualization will be included in future work.
 
 \section{Law of Cosines Diagram}
 Below is a diagram illustrating the law of cosines for the relative velocity:
 
 \begin{center}
 \begin{tikzpicture}[scale=1.5]
-    \draw[thick, ->] (0, 0) -- (3, 0) node[midway, below]{$\vec{v}_1$};
-    \draw[thick, ->] (0, 0) -- (1.5, 2) node[midway, left]{$\vec{v}_2$};
-    \draw[thick, ->, gray] (3, 0) -- (1.5, 2) node[midway, right]{$\vec{v}_{\text{rel}}$};
+    \draw[thick, ->] (0, 0) -- (3, 0) node[midway, below]{$\mathbf{v}_1$};
+    \draw[thick, ->] (0, 0) -- (1.5, 2) node[midway, left]{$\mathbf{v}_2$};
+    \draw[thick, ->, gray] (3, 0) -- (1.5, 2) node[midway, right]{$\mathbf{v}_{\text{rel}}$};
     \node at (1, 0.25) {$\theta$};
 \end{tikzpicture}
 \end{center}
